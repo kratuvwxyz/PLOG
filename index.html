@@ -1,203 +1,30 @@
 <!doctype html>
+<html lang="en">
+    <head>
+        <title>PLOG</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--=======================================================================
-
-        ╥╥  DESIGNED AND DEVELOPED BY...
-        ║║ 
-        ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
-        ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║  
-    ╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║ 
-    ║║  ║║                      ║║     ║║     ╙╙ 
-    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜              
-            LLC © HTTPS://DESAIGN.APP 
-            ALL RIGHTS RESERVED
-
-===========================================================================-->
-
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
-
-<!--=============================================-->
-<!--=============================================-->
-<!--=============================================-->
-
-<head>
-
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Required meta tags
-::::::::::::::::::::::::::::::::::::::::-->
-  
-    <meta charset="utf-8">
-    <!--just for auto-refresh or redirect use the following meta tag-->
-    <meta http-equiv="refresh" content="15" />
-    <!--<meta http-equiv="refresh" content="0; url=http://website.com/" />-->
-    <!-- For IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!--mobile specific metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!--basic page needs-->
-    <meta name="author" content="#DESAIGNER ¯\_(ツ)_/¯" />
-    <meta name="description" content="#"/> 
-    <meta name="keywords" content="#"/>
-    
-    <!--favicons-->
-    <link rel="shortcut icon" type="image/gif" href="https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/favicon.gif" />
-
-          <!--:::::::::::::::::::::::::::::::::::::::
-  Scripts
-::::::::::::::::::::::::::::::::::::::::-->
-    <!-- jQuery -->
-    <script src="jQuery.js"></script>
-
-    <!-- moment js -->
-    <script src="moment.js"></script>
-
-          <!--:::::::::::::::::::::::::::::::::::::::
-  Stylesheets
-::::::::::::::::::::::::::::::::::::::::-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Document Title
-::::::::::::::::::::::::::::::::::::::::-->
-    <title>PLOG</title>
-
-</head>
-
-<!--=============================================-->
-<!--=============================================-->
-<!--=============================================-->
-
-<body class="bg-dark">
-
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <noscript>
-            You need to enable JavaScript to run this app.
-          </noscript>
-        
-          <!--:::::::::::::::::::::::::::::::::::::::
-        Document Wrapper
-      ::::::::::::::::::::::::::::::::::::::::-->
-	<div id="a1" class="container-fluid bg-info p-2">
-		<div id="a3" class="row">
-			<h1 class="text-center text-light p-5">PLOG</h1>
-		</div>
-		<div id="a2" class="row">
-			<button class="btn btn-light m-3 px-5 mx-auto" id="section1" onclick="myFunction()">Copy text</button>
-    </div>
-    <div id="a4" class="row">
-      <div id="section2" class="weekBtn btn btn-light m-3 px-5 mx-auto" onclick="myFunction()">Copy text</div>
-    </div>
-	</div>
-
-    <script>
-      //change one digit to two digit function
-      aa = (num) => {
-          return ( num < 10 ? '0' : '') + num;
-      }
-      // year
-      let mY = moment().year().toString().slice(2);
-      // month
-      let mM = moment().month();
-      // week
-      let mW = moment().isoWeek();
-      // date
-      let mD = moment().date();
-      // hour
-      let mH = moment().hour();
-      // minutes
-      let mI = moment().minute();
-
-      let code = `${mY}${aa(mM)}${aa(mD)}${aa(mH)}${aa(mI)}`;
-      console.log(code);
-
-      // adding value in section one
-      $("#section1").text(code);
-
-	    //getting code
-        // var d = new Date();
-        //year
-        // var yyyy = d.getFullYear();
-        // yyyy = yyyy.toString();
-        // yy = yyyy[2]+""+yyyy[3];
-        //month
-        // var mm = d.getMonth()+1;
-        // if(mm<10){
-	      //   mm = 0+""+mm;
-        // }
-        //date
-        // var dd = d.getDate();
-        // if(dd<10){
-	      //   dd = 0+""+dd;
-        // }
-        //hours
-        // var hh = d.getHours();
-        // if(hh<10){
-	      //   hh = 0+""+hh;
-        // }
-        //min
-        // var mi = d.getMinutes();
-        // if(mi<10){
-	      //   mi = 0+""+mi;
-        // }
-        //code
-        // var code = yy+""+mm+""+dd+""+hh+""+mi;
-        // console.log(code);
-        
-
-        
-        //font-size
-        var vw = $(document).width();
-        console.log(vw);
-        var vw = (vw * 150) / 150;
-        console.log(vw);
-        document.getElementById("section1").style.fontSize = vw+"%";
-        
-        //refresh page
-/*
-        if(vw < vw+1 || vw > vw-1){
-	        location.reload();
-        }
-*/
-        
-        //copy text
-        function myFunction() {
-			var el = document.createElement('textarea');
-			el.value = document.getElementById("section1").textContent;
-			document.body.appendChild(el);
-			el.select();
-			document.execCommand('copy');
-			document.body.removeChild(el);
-		}
-        
-    </script>
-</body>
-<!--=================================================================-->
-<!--====================================================================-->
-<!--=======================================================================
-
-        ╥╥ DESIGNED AND DEVELOPED BY...
-        ║║ 
-        ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
-        ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║  
-    ╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║ 
-    ║║  ║║                      ║║     ║║     ╙╙ LLC © HTTPS://DESAIGN.APP 
-    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜              ALL RIGHTS RESERVED
-
-===========================================================================-->
-<!--====================================================================-->
-<!--=================================================================-->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body id="app">
+        <nav class="navbar navbar-light bg-light"><span class="navbar-brand mb-0 h1">PLOG</span></nav>
+        <div class="container-fluid">
+            <div class="row m-0 p-5">
+                <div id="section1">Copy Text</div>
+            </div>
+            <div class="row m-0 p-5">
+                <div id="section2">Copy Text</div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="moment.js"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
