@@ -42,13 +42,3 @@ $("#section1").text(code).css('font-size', wW+"%").addClass('btn btn-light').cli
 
 // adding value in section two
 $("#section2").text(code2).addClass('btn btn-info').click((event) => {clickCopy(event);});
-
-
-$( "button" ).click(function() {
-  var text = $( this ).text();
-  $( "input" ).val( text );
-});
-
-
-
-
