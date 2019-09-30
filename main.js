@@ -21,7 +21,7 @@ clickCopy = (event) => {
 // year
 let mY = moment().year().toString().slice(2);
 // month
-let mM = moment().month();
+let mM = moment().month()+1;
 // week
 let mW = moment().isoWeek();
 // date
