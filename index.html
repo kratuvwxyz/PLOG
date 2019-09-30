@@ -2,7 +2,7 @@
 
 <!--=======================================================================
 
-        ╥╥ DESIGNED AND DEVELOPED BY...
+        ╥╥  DESIGNED AND DEVELOPED BY...
         ║║ 
         ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
         ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║  
@@ -10,8 +10,10 @@
     ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
     ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
     ║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║ 
-    ║║  ║║                      ║║     ║║     ╙╙ LLC © HTTPS://DESAIGN.APP 
-    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜              ALL RIGHTS RESERVED
+    ║║  ║║                      ║║     ║║     ╙╙ 
+    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜              
+            LLC © HTTPS://DESAIGN.APP 
+            ALL RIGHTS RESERVED
 
 ===========================================================================-->
 
@@ -51,7 +53,11 @@
           <!--:::::::::::::::::::::::::::::::::::::::
   Scripts
 ::::::::::::::::::::::::::::::::::::::::-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="jQuery.js"></script>
+
+    <!-- moment js -->
+    <script src="moment.js"></script>
 
           <!--:::::::::::::::::::::::::::::::::::::::
   Stylesheets
@@ -87,43 +93,68 @@
 			<h1 class="text-center text-light p-5">PLOG</h1>
 		</div>
 		<div id="a2" class="row">
-			<button class="btn btn-light px-5 mx-auto" id="section1" onclick="myFunction()">Copy text</button>
-		</div>
+			<button class="btn btn-light m-3 px-5 mx-auto" id="section1" onclick="myFunction()">Copy text</button>
+    </div>
+    <div id="a4" class="row">
+      <div id="section2" class="weekBtn btn btn-light m-3 px-5 mx-auto" onclick="myFunction()">Copy text</div>
+    </div>
 	</div>
 
     <script>
+      //change one digit to two digit function
+      aa = (num) => {
+          return ( num < 10 ? '0' : '') + num;
+      }
+      // year
+      let mY = moment().year().toString().slice(2);
+      // month
+      let mM = moment().month();
+      // week
+      let mW = moment().isoWeek();
+      // date
+      let mD = moment().date();
+      // hour
+      let mH = moment().hour();
+      // minutes
+      let mI = moment().minute();
+
+      let code = `${mY}${aa(mM)}${aa(mD)}${aa(mH)}${aa(mI)}`;
+      console.log(code);
+
+      // adding value in section one
+      $("#section1").text(code);
+
 	    //getting code
-        var d = new Date();
+        // var d = new Date();
         //year
-        var yyyy = d.getFullYear();
-        yyyy = yyyy.toString();
-        yy = yyyy[2]+""+yyyy[3];
+        // var yyyy = d.getFullYear();
+        // yyyy = yyyy.toString();
+        // yy = yyyy[2]+""+yyyy[3];
         //month
-        var mm = d.getMonth()+1;
-        if(mm<10){
-	        mm = 0+""+mm;
-        }
+        // var mm = d.getMonth()+1;
+        // if(mm<10){
+	      //   mm = 0+""+mm;
+        // }
         //date
-        var dd = d.getDate();
-        if(dd<10){
-	        dd = 0+""+dd;
-        }
+        // var dd = d.getDate();
+        // if(dd<10){
+	      //   dd = 0+""+dd;
+        // }
         //hours
-        var hh = d.getHours();
-        if(hh<10){
-	        hh = 0+""+hh;
-        }
+        // var hh = d.getHours();
+        // if(hh<10){
+	      //   hh = 0+""+hh;
+        // }
         //min
-        var mi = d.getMinutes();
-        if(mi<10){
-	        mi = 0+""+mi;
-        }
+        // var mi = d.getMinutes();
+        // if(mi<10){
+	      //   mi = 0+""+mi;
+        // }
         //code
-        var code = yy+""+mm+""+dd+""+hh+""+mi;
-        console.log(code);
+        // var code = yy+""+mm+""+dd+""+hh+""+mi;
+        // console.log(code);
         
-        document.getElementById("section1").innerHTML = code;
-        
+
         
         //font-size
         var vw = $(document).width();
