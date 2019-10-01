@@ -32,7 +32,7 @@ let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 console.log(code2);
 
 // adding value in section one
-$("#section1").text(code).addClass('btn btn-light btn-lg').css('font-size', wW+"%").click((event) => {clickCopy(event);});
+$("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-size', wW+"%").click((event) => {clickCopy(event);});
 
 // adding value in section two
 $("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
