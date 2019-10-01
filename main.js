@@ -1,7 +1,5 @@
-//change one digit to two digit function
-aa = (num) => {
-    return ( num < 10 ? '0' : '') + num;
-}
+// current time
+let time = moment();
 
 // window width
 let wW = ($(document).width())*.97;
@@ -18,18 +16,6 @@ clickCopy = (event) => {
     $(el).remove();
 }
 
-// year
-let mY = moment().year().toString().slice(2);
-// month
-let mM = moment().month()+1;
-// week
-let mW = moment().isoWeek();
-// date
-let mD = moment().date();
-// hour
-let mH = moment().hour();
-// minutes
-let mI = moment().minute();
 // second
 let mS = moment().second();
 // set interval for refreshing time at zero
@@ -38,11 +24,11 @@ setInterval(() => {
     location.reload();
 }, calRef);
 
-// adding all in one code
-let code = `${mY}${aa(mM)}${aa(mD)}${aa(mH)}${aa(mI)}`;
+// adding Year Month Date Hour Minute in one code
+let code = `${time.format('YY')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`
 console.log(code);
-// adding weekly log code2
-let code2 = `${mY}${aa(mW)}`;
+// adding Year Quarter Week log code2
+let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 console.log(code2);
 
 // adding value in section one
