@@ -4,7 +4,7 @@ aa = (num) => {
 }
 
 // window width
-let wW = $(document).width();
+let wW = ($(document).width())*.97;
 
 // click and copy function
 clickCopy = (event) => {
@@ -33,7 +33,7 @@ let mI = moment().minute();
 // second
 let mS = moment().second();
 // set interval for refreshing time at zero
-let calRef = ((60 - mS)*1000);
+let calRef = ((59 - mS)*1000);
 setInterval(() => {
     location.reload();
 }, calRef);
@@ -50,3 +50,5 @@ $("#section1").text(code).css('font-size', wW+"%").addClass('btn btn-light').cli
 
 // adding value in section two
 $("#section2").text(code2).addClass('btn btn-info').click((event) => {clickCopy(event);});
+
+
