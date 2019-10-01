@@ -30,6 +30,14 @@ let mD = moment().date();
 let mH = moment().hour();
 // minutes
 let mI = moment().minute();
+// second
+let mS = moment().second();
+// set interval for refreshing time at zero
+let calRef = ((60 - mS)*1000);
+setInterval(() => {
+    location.reload();
+}, calRef);
+
 // adding all in one code
 let code = `${mY}${aa(mM)}${aa(mD)}${aa(mH)}${aa(mI)}`;
 console.log(code);
