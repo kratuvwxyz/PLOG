@@ -2,7 +2,7 @@
 let time = moment();
 
 // window width
-let wW = ($(document).width())*.97;
+let wW = $(document).width();
 
 // click and copy function
 clickCopy = (event) => {
@@ -32,9 +32,9 @@ let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 console.log(code2);
 
 // adding value in section one
-$("#section1").text(code).css('font-size', wW+"%").addClass('btn btn-light').click((event) => {clickCopy(event);});
+$("#section1").text(code).addClass('btn btn-light btn-lg').css('font-size', wW+"%").click((event) => {clickCopy(event);});
 
 // adding value in section two
-$("#section2").text(code2).addClass('btn btn-info').click((event) => {clickCopy(event);});
+$("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
 
 
