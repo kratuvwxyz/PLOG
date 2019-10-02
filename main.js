@@ -20,9 +20,13 @@ clickCopy = (event) => {
 let mS = moment().second();
 // set interval for refreshing time at zero
 let calRef = ((59 - mS)*1000);
-setInterval(() => {
-    location.reload();
-}, calRef);
+if (calRef > 2000){
+    setInterval(() => {
+        location.reload();
+    }, calRef);
+}
+console.log(calRef);
+
 
 // adding Year Month Date Hour Minute in one code
 let code = `${time.format('YY')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`
