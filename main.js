@@ -20,7 +20,7 @@ clickCopy = (event) => {
 let mS = moment().second();
 // set interval for refreshing time at zero
 let calRef = ((59 - mS)*1000);
-if (calRef < 58000){
+if (calRef < 60000){
     setInterval(() => {
         location.reload();
     }, calRef);
