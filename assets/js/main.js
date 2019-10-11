@@ -41,4 +41,7 @@ $("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-s
 // adding value in section two
 $("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
 
+// adding value in section two
+$("#section3").text(code2+'V'+code).addClass('btn btn-warning btn-lg').click((event) => {clickCopy(event);});
+
 
