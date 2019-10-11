@@ -35,7 +35,7 @@ console.log(code);
 let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 console.log(code2);
 // adding Year Quarter Week log code2
-let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}V${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`;
+let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`;
 console.log(code3);
 
 
