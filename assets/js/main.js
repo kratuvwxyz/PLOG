@@ -34,6 +34,10 @@ console.log(code);
 // adding Year Quarter Week log code2
 let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 console.log(code2);
+// adding Year Quarter Week log code2
+let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}V${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`;
+console.log(code3);
+
 
 // adding value in section one
 $("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-size', wW+"%").click((event) => {clickCopy(event);});
@@ -42,6 +46,6 @@ $("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-s
 $("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
 
 // adding value in section two
-$("#section3").text(code2+'V'+code).addClass('btn btn-warning btn-lg').click((event) => {clickCopy(event);});
+$("#section3").text(code3).addClass('btn btn-warning btn-lg').click((event) => {clickCopy(event);});
 
 
