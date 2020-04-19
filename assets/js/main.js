@@ -1,6 +1,3 @@
-// current time
-let time = moment();
-
 // window width
 let wW = $(document).width();
 
@@ -16,36 +13,36 @@ clickCopy = (event) => {
     $(el).remove();
 }
 
-// second
-let mS = moment().second();
-// set interval for refreshing time at zero
-let calRef = ((59 - mS)*1000);
-if (calRef < 60000){
-    setInterval(() => {
-        location.reload();
-    }, calRef);
+// current time
+let time = moment();
+
+// // if you don't want to use moment.js then use this one (vanila javascript)
+// let d = new Date();
+// console.log(d);
+// let dd = `${d.getFullYear().toString()[2]}${d.getFullYear().toString()[3]}${!d.getMonth().toString()[1]? 0+""+(d.getMonth() + 1) : (d.getMonth() + 1)}${!d.getDate().toString()[1]? 0+""+d.getDate() : d.getDate()}${!d.getHours().toString()[1]? 0+""+d.getHours() : d.getHours()}${!d.getMinutes().toString()[1]? 0+""+d.getMinutes() : d.getMinutes()}`;
+// console.log(dd);
+
+// set interval for everysecond
+setInterval(myTimer, 1000);
+function myTimer() {
+    // adding Year Month Date Hour Minute in one code
+    let code = `${time.format('YY')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`
+
+    // adding value in section one
+    $("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-size', wW+"%").click((event) => {clickCopy(event);});
+
+    // adding Year Quarter Week log code2
+    let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
+    
+    // adding value in section two
+    $("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
+    
+    // adding Year Quarter Week log code2
+    let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}`;    
+    
+    // adding value in section two
+    $("#section3").text(code3).addClass('btn btn-warning btn-lg').click((event) => {clickCopy(event);});
 }
-console.log(mS);
 
-
-// adding Year Month Date Hour Minute in one code
-let code = `${time.format('YY')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`
-console.log(code);
-// adding Year Quarter Week log code2
-let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
-console.log(code2);
-// adding Year Quarter Week log code2
-let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}`;
-console.log(code3);
-
-
-// adding value in section one
-$("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-size', wW+"%").click((event) => {clickCopy(event);});
-
-// adding value in section two
-$("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => {clickCopy(event);});
-
-// adding value in section two
-$("#section3").text(code3).addClass('btn btn-warning btn-lg').click((event) => {clickCopy(event);});
 
 
