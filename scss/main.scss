@@ -1,0 +1,29 @@
+$primary-color: #003355;
+$cyan: #17a2b8;
+$whitesmoke: #f5f5f5;
+$white: #ffffff;
+
+body {
+    background-color: darken($primary-color, 10%);
+}
+
+
+
+.btn-info {
+    color: $whitesmoke;
+    background-color: $cyan;
+    border-color: $cyan;
+
+    &:hover {
+        color: $white;
+        background-color: darken($cyan, 10%);
+        border-color: darken($cyan, 20%);
+    }
+
+    &:focus {
+        color: $whitesmoke;
+        background-color: $cyan;
+        border-color: $cyan;
+        box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+    }
+  }

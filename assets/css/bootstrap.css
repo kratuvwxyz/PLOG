@@ -2663,42 +2663,7 @@
     box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
   }
   
-  .btn-info {
-    color: var(--white);
-    background-color: var(--cyan);
-    border-color: var(--cyan);
-  }
-  
-  .btn-info:hover {
-    color: var(--white);
-    background-color: var(--cyan);
-    border-color: var(--cyan);
-  }
-  
-  .btn-info:focus, .btn-info.focus {
-    color: var(--white);
-    background-color: var(--cyan);
-    border-color: var(--cyan);
-    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
-  }
-  
-  .btn-info.disabled, .btn-info:disabled {
-    color: var(--white);
-    background-color: var(--cyan);
-    border-color: var(--cyan);
-  }
-  
-  .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
-  .show > .btn-info.dropdown-toggle {
-    color: var(--white);
-    background-color: var(--cyan);
-    border-color: #10707f;
-  }
-  
-  .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
-  .show > .btn-info.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
-  }
+
   
   .btn-warning {
     color: var(--bodyCopy);
