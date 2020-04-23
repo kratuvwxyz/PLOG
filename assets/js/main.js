@@ -9,6 +9,9 @@ let wW = $(document).width();console.log(wW);
 
 function wWf() {
     wW = $(document).width();
+    console.log(wW + "new");
+    myTimer();
+    
 }
 // window on resize
 window.onresize = wWf;console.log(wW);
@@ -35,7 +38,7 @@ function myTimer() {
     let code = `${time.format('YY')}${time.format('MM')}${time.format('DD')}${time.format('HH')}${time.format('mm')}`
 
     // adding value in section one
-    $("#section1").text(code).addClass('btn btn-light btn-lg btn-block').css('font-size', wW + "%").click((event) => { clickCopy(event); });
+    $("#section1").text(code).addClass('btn-sect-1').css('font-size', (wW/1.0625) + "%")/* .hover(function(){$(this).css('font-size', (wW/1.0625) + "%")},function(){$(this).css('font-size', (wW/1.075) + "%")}).active(function(){$(this).css('font-size', (wW/1.0725) + "%")}) */.click(function(){$(this).css('font-size', (wW/1.0725) + "%")}).click((event) => { clickCopy(event); });
 
     // adding Year Quarter Week log code2
     let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;

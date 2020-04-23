@@ -7,10 +7,35 @@ body {
     background-color: darken($primary-color, 10%);
 }
 
+.section1{
+    padding: 10px;
+}
+
+.btn-sect-1 {
+    padding: 20px;
+    margin: auto;
+    background-color: $whitesmoke;
+    color: $primary-color;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+        background-color: darken($whitesmoke, 10%);
+        color: lighten($primary-color, 10%);
+        cursor: grab;
+    }
+    
+    &:active {
+        width: 98%;
+        background-color: darken($whitesmoke, 20%);
+        color: lighten($primary-color, 20%);
+        cursor: grabbing;
+    }
+}
+
 .btn-fix-width {
     width: 200px;
 }
-
 
 .btn-info {
     color: $whitesmoke;
