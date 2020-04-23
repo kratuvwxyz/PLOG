@@ -5,13 +5,13 @@ $(function () {
 
 /* Window Width for Resizing fonts */
 // window width
-let wW = $(document).width();
+let wW = $(document).width();console.log(wW);
 
 function wWf() {
     wW = $(document).width();
 }
 // window on resize
-window.onresize = wWf;
+window.onresize = wWf;console.log(wW);
 
 /* click and copy function */
 clickCopy = (event) => {
