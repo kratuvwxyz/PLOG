@@ -39,7 +39,7 @@ function myTimer() {
     // adding Year Quarter Week log code2
     let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}`;
     
-    // adding value in section two
+    // adding value in section three
     $("#section3").text(code3).addClass('btn btn-warning btn-lg').click((event) => { clickCopy(event); });
     
     // if you don't want to use moment.js then use this one (vanila javascript)
@@ -47,8 +47,13 @@ function myTimer() {
     // let dd = `${d.getFullYear().toString()[2]}${d.getFullYear().toString()[3]}${!d.getMonth().toString()[1] ? 0 + "" + (d.getMonth() + 1) : (d.getMonth() + 1)}${!d.getDate().toString()[1] ? 0 + "" + d.getDate() : d.getDate()}${!d.getHours().toString()[1] ? 0 + "" + d.getHours() : d.getHours()}${!d.getMinutes().toString()[1] ? 0 + "" + d.getMinutes() : d.getMinutes()}${!d.getSeconds().toString()[1] ? 0 + "" + d.getSeconds() : d.getSeconds()}`;
     let code4 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}${time.format('ss')}`;
 
-    // adding value in section one
+    // adding value in section four
     $("#section4").text(code4).addClass('btn btn-light btn-lg btn-block').click((event) => { clickCopy(event); });
+    
+    // adding time from 1970 till now in microsecond
+    let code5 = Date.now();
+    // adding value in section five
+    $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-block').click((event) => { clickCopy(event); });
 }
 
 
