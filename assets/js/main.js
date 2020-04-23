@@ -1,12 +1,19 @@
-// tooltip
+/* tooltip */
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
+/* Window Width for Resizing fonts */
 // window width
 let wW = $(document).width();
 
-// click and copy function
+function wWf() {
+    wW = $(document).width();
+}
+// window on resize
+window.onresize = wWf;
+
+/* click and copy function */
 clickCopy = (event) => {
     let el = $('<textarea></textarea>');
     let elId = "#" + event.target.id;
@@ -18,7 +25,7 @@ clickCopy = (event) => {
     $(el).remove();
 }
 
-// set interval for everysecond
+/* set interval for everysecond */
 setInterval(myTimer, 1000);
 function myTimer() {
     // current time
@@ -34,13 +41,13 @@ function myTimer() {
     let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 
     // adding value in section two
-    $("#section2").text(code2).addClass('btn btn-info btn-lg').click((event) => { clickCopy(event); });
+    $("#section2").text(code2).addClass('btn btn-info btn-lg btn-fix-width').click((event) => { clickCopy(event); });
 
     // adding Year Quarter Week log code2
     let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}`;
     
     // adding value in section three
-    $("#section3").text(code3).addClass('btn btn-warning btn-lg').click((event) => { clickCopy(event); });
+    $("#section3").text(code3).addClass('btn btn-warning btn-lg btn-fix-width').click((event) => { clickCopy(event); });
     
     // if you don't want to use moment.js then use this one (vanila javascript)
     // let d = new Date();
@@ -48,12 +55,12 @@ function myTimer() {
     let code4 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}${time.format('ss')}`;
 
     // adding value in section four
-    $("#section4").text(code4).addClass('btn btn-light btn-lg btn-block').click((event) => { clickCopy(event); });
+    $("#section4").text(code4).addClass('btn btn-light btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event); });
     
     // adding time from 1970 till now in microsecond
     let code5 = Date.now();
     // adding value in section five
-    $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-block').click((event) => { clickCopy(event); });
+    $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event); });
 }
 
 
