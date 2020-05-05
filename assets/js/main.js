@@ -111,8 +111,8 @@ function flipCoin() {
     for(let i = 0; i < b; i++) {
         e.push(d[c]);
     }
-    setInterval(result, 5000);
     function result() {
         alert(e);
     }
+    setInterval(result, 5000);
 }
