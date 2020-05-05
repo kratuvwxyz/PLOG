@@ -109,6 +109,8 @@ function flipCoin() {
     let e = [];
     for(let i = 0; i < b; i++) {
         let c = Math.floor(Math.random()*2);
+        console.log(c);
+        
         e.push(d[c]);
     }
     function result() {
