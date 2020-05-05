@@ -75,7 +75,7 @@ function myTimer() {
 $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
 
 // flip coin
-$("#section6").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
+$("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
 
 
 // set interval for every minute
