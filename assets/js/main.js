@@ -69,9 +69,14 @@ function myTimer() {
     // adding value in section five
     $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event); });
 
-    // password
-    $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
 }
+
+// password
+$("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
+
+// flip coin
+$("#section6").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
+
 
 // set interval for every minute
 setInterval(oneMinute, 60000);
@@ -89,4 +94,26 @@ function oneMinute() {
 }
 oneMinute();
 
-
+function flipCoin() {
+    let a = confirm('Select your side: Is it HEAD?');
+    if(a){
+        alert('Good choice, you select HEAD');
+    } else {
+        alert('Good choice, you select TAIL');
+    }
+    let b = prompt('How many times do you want to flip your coin? Remember, it has to be in odd number').trim();
+    let c = Math.floor(Math.random());
+    let d = ['HEAD', 'TAIL'];
+    if(b%2 === 0){
+       return b++;
+    }
+    console.log(b);
+    let e = [];
+    for(let i = 0; i < b; i++) {
+        e.push(d[c]);
+    }
+    setInterval(result, 5000);
+    result = () => {
+        alert(e);
+    }
+}
