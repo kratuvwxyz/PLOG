@@ -114,5 +114,5 @@ function flipCoin() {
     function result() {
         alert(e);
     }
-    setInterval(result, 5000);
+    result();
 }
