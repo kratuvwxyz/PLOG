@@ -69,13 +69,13 @@ function myTimer() {
     // adding value in section five
     $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event); });
 
+    // password
+    $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
+    
+    // flip coin
+    $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
 }
 
-// password
-$("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
-
-// flip coin
-$("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
 
 
 // set interval for every minute
