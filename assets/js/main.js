@@ -104,7 +104,6 @@ function flipCoin() {
     let b = prompt('How many times do you want to flip your coin? Remember, it has to be in odd number');
     if(b%2 === 0){
         b++;
-        console.log(b);
     } 
     let c = Math.floor(Math.random());
     let d = ['HEAD', 'TAIL'];
@@ -113,7 +112,7 @@ function flipCoin() {
         e.push(d[c]);
     }
     setInterval(result, 5000);
-    result = () => {
+    function result() {
         alert(e);
     }
 }
