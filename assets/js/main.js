@@ -101,13 +101,13 @@ function flipCoin() {
     } else {
         alert('Good choice, you select TAIL');
     }
-    let b = prompt('How many times do you want to flip your coin? Remember, it has to be in odd number').trim();
-    let c = Math.floor(Math.random());
-    let d = ['HEAD', 'TAIL'];
+    let b = prompt('How many times do you want to flip your coin? Remember, it has to be in odd number');
     if(b%2 === 0){
         b++;
         console.log(b);
-    }
+    } 
+    let c = Math.floor(Math.random());
+    let d = ['HEAD', 'TAIL'];
     let e = [];
     for(let i = 0; i < b; i++) {
         e.push(d[c]);
