@@ -110,10 +110,10 @@ function flipCoin() {
     for(let i = 0; i < b; i++) {
         let c = Math.floor(Math.random()*2);
         console.log(c);
-        
         e.push(d[c]);
     }
     function result() {
+        e.forEach(function(x) { counts[x] = (counts[x] || 0) + 1; });
         alert(e);
     }
     result();
