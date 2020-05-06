@@ -116,7 +116,20 @@ function flipCoin() {
         f[x] = (f[x] || 0) + 1; 
         console.log(x);
     });
+    let x = "";
+    if(f.HEAD > f.TAIL){
+        if (a) {
+            x = "you Win";
+        } else {
+            x = "you Lose";
+        }
+    } else {
+        if (a) {
+            x = "you Lose";
+        } else {
+            x = "you Win";
+        }
+    }
     alert('You choose to flip ' + b + ' times and we did it for you...');
-    alert('Your result is: ' + e);
-    alert('Which means you got HEAD ' + f.HEAD + ' times and TAIL ' + f.TAIL);
+    alert('Your result is: ' + e.join(', ') + '. Which means you got HEAD ' + f.HEAD + ' times and TAIL ' + f.TAIL + '. After all ' + x + '.');
 }
