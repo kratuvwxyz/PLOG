@@ -114,6 +114,7 @@ function flipCoin() {
         e.push(d[c]);
     }
     function result() {
+        alert(e);
         e.forEach(function(x) { f[x] = (f[x] || 0) + 1; });
         alert(f);
     }
