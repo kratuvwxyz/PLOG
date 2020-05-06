@@ -131,5 +131,5 @@ function flipCoin() {
         }
     }
     alert('You choose to flip ' + b + ' times and we did it for you...');
-    alert('Your result is: \n\n' + e.join(', ') + '\n\nWhich means you got ' + f.HEAD + ' times HEAD and ' + f.TAIL + 'times TAIL. \n\nAfter all ' + x + '.');
+    alert('Your result is: \n\n' + e.join(', ') + '\n\nWhich means you got ' + f.HEAD + ' times HEAD and ' + f.TAIL + ' times TAIL. \n\nAfter all ' + x + '.');
 }
