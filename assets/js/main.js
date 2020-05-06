@@ -117,5 +117,5 @@ function flipCoin() {
         f[x] = (f[x] || 0) + 1; 
         console.log(x);
     });
-    alert(f);
+    console.log(f);
 }
