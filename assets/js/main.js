@@ -115,7 +115,11 @@ function flipCoin() {
     }
     function result() {
         alert(e);
-        e.forEach(function(x) { f[x] = (f[x] || 0) + 1; });
+        e.forEach(function(x) { 
+            // f[x] = (f[x] || 0) + 1; 
+            console.log(x);
+            
+        });
         alert(f);
     }
     result();
