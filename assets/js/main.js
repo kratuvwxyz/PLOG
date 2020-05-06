@@ -112,10 +112,11 @@ function flipCoin() {
         console.log(c);
         e.push(d[c]);
     }
-    alert(e);
     e.forEach(function(x) { 
         f[x] = (f[x] || 0) + 1; 
         console.log(x);
     });
-    console.log(f);
+    alert('You choose to flip ' + b + ' times and we did it for you...');
+    alert('Your result is: ' + e);
+    alert('Which means you got HEAD ' + f.HEAD + ' times and TAIL ' + f.TAIL);
 }
