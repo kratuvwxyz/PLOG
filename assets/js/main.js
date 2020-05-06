@@ -93,10 +93,10 @@ function oneMinute() {
 }
 oneMinute();
 
-let d = ['HEAD', 'TAIL'];
-let e = [];
-let f = {};
 function flipCoin() {
+    let d = ['HEAD', 'TAIL'];
+    let e = [];
+    let f = {};
     let a = confirm('Select your side: Is it HEAD?');
     if(a){
         alert('Good choice, you select HEAD');
@@ -119,17 +119,17 @@ function flipCoin() {
     let x = "";
     if(f.HEAD > f.TAIL){
         if (a) {
-            x = "you Win";
+            x = "you WIN";
         } else {
-            x = "you Lose";
+            x = "you LOSE";
         }
     } else {
         if (a) {
-            x = "you Lose";
+            x = "you LOSE";
         } else {
-            x = "you Win";
+            x = "you WIN";
         }
     }
     alert('You choose to flip ' + b + ' times and we did it for you...');
-    alert('Your result is: ' + e.join(', ') + '. Which means you got HEAD ' + f.HEAD + ' times and TAIL ' + f.TAIL + '. After all ' + x + '.');
+    alert('Your result is: \n\n' + e.join(', ') + '\n\nWhich means you got ' + f.HEAD + ' times HEAD and ' + f.TAIL + 'times TAIL. \n\nAfter all ' + x + '.');
 }
