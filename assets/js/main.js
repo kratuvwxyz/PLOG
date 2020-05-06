@@ -3,13 +3,9 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
-// password generator
-let password = [];
-password = password.join();
-
 /* Window Width for Resizing fonts */
 // window width
-let wW = $(document).width(); console.log(wW);
+let wW = $(document).width();
 
 function wWf() {
     wW = $(document).width();
@@ -17,7 +13,7 @@ function wWf() {
 
 }
 // window on resize
-window.onresize = wWf; console.log(wW);
+window.onresize = wWf;
 
 /* click and copy function */
 clickCopy = (event) => {
@@ -30,6 +26,10 @@ clickCopy = (event) => {
     document.execCommand('copy');
     $(el).remove();
 }
+
+// password generator
+let password = [];
+password = password.join();
 
 /* set interval for everysecond */
 setInterval(myTimer, 1000);
@@ -75,8 +75,6 @@ function myTimer() {
     $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-fix-width btn-block');
 }
 
-
-
 // set interval for every minute
 setInterval(oneMinute, 60000);
 function oneMinute() {
@@ -93,6 +91,7 @@ function oneMinute() {
 }
 oneMinute();
 
+// flip the coin script
 function flipCoin() {
     let d = ['HEAD', 'TAIL'];
     let e = [];
@@ -109,12 +108,10 @@ function flipCoin() {
     } 
     for(let i = 0; i < b; i++) {
         let c = Math.floor(Math.random()*2);
-        console.log(c);
         e.push(d[c]);
     }
     e.forEach(function(x) { 
         f[x] = (f[x] || 0) + 1; 
-        console.log(x);
     });
     let x = "";
     if(f.HEAD > f.TAIL){
