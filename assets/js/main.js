@@ -93,6 +93,9 @@ function oneMinute() {
 }
 oneMinute();
 
+let d = ['HEAD', 'TAIL'];
+let e = [];
+let f = {};
 function flipCoin() {
     let a = confirm('Select your side: Is it HEAD?');
     if(a){
@@ -104,21 +107,15 @@ function flipCoin() {
     if(b%2 === 0){
         b++;
     } 
-    let d = ['HEAD', 'TAIL'];
-    let e = [];
-    let f = {};
     for(let i = 0; i < b; i++) {
         let c = Math.floor(Math.random()*2);
         console.log(c);
         e.push(d[c]);
     }
-    function result() {
-        alert(e);
-        e.forEach(function(x) { 
-            f[x] = (f[x] || 0) + 1; 
-            console.log(x);
-            alert(f);
-        });
-    }
-    result();
+    alert(e);
+    e.forEach(function(x) { 
+        f[x] = (f[x] || 0) + 1; 
+        console.log(x);
+    });
+    alert(f);
 }
