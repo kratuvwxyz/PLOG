@@ -73,7 +73,7 @@ function myTimer() {
     $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
     
     // flip coin
-    $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-block');
+    $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-fix-width btn-block');
 }
 
 
@@ -107,14 +107,15 @@ function flipCoin() {
     } 
     let d = ['HEAD', 'TAIL'];
     let e = [];
+    let f = {};
     for(let i = 0; i < b; i++) {
         let c = Math.floor(Math.random()*2);
         console.log(c);
         e.push(d[c]);
     }
     function result() {
-        e.forEach(function(x) { counts[x] = (counts[x] || 0) + 1; });
-        alert(e);
+        e.forEach(function(x) { f[x] = (f[x] || 0) + 1; });
+        alert(f);
     }
     result();
 }
