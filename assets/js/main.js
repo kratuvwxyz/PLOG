@@ -70,7 +70,7 @@ function myTimer() {
 
     // password
     $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event); });
-    
+
     // flip coin
     $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-fix-width btn-block');
 }
@@ -83,50 +83,56 @@ function oneMinute() {
     let a = "$#@abcdefghkmnpqrstuvwxyz23456789";
     let b = a.toUpperCase();
     let c = a.concat(b).split("");
-    for(let i = 0; i < 20; i++){
-        let d = Math.floor(Math.random()*c.length);
+    for (let i = 0; i < 20; i++) {
+        let d = Math.floor(Math.random() * c.length);
         password.push(c[d]);
     }
-    
+
 }
 oneMinute();
 
 // flip the coin script
 function flipCoin() {
-    let d = ['HEAD', 'TAIL'];
-    let e = [];
-    let f = {};
-    let a = confirm('Select your side: Is it HEAD?');
-    if(a){
-        alert('Good choice, you select HEAD');
+    let a = ['HEAD', 'TAIL'];
+    alert('First, select your side.');
+    let b = confirm('Is it HEAD? \n\nOK to confirm.');
+    let c = '';
+    if (b) {
+        alert('Good choice, you select HEAD.');
+        c = 'HEAD';
     } else {
-        alert('Good choice, you select TAIL');
+        alert('Good choice, you select TAIL.');
+        c = 'TAIL';
     }
-    let b = prompt('How many times do you want to flip your coin? Remember, it has to be in odd number');
-    if(b%2 === 0){
-        b++;
-    } 
-    for(let i = 0; i < b; i++) {
-        let c = Math.floor(Math.random()*2);
-        e.push(d[c]);
+    let d;
+    do {
+        d = parseInt(prompt('How many times do you want to flip your coin? \n\nRemember, to get a right result, flip number has to be a odd number only.'));
+    } while (isNaN(d) || d % 2 === 0);
+    alert('You choose to flip ' + d + ' times and we did it for you...');
+    let e  = [];
+    for(let i = 0; i < d; i++) {
+        let f = Math.floor(Math.random()*2);
+        e.push(a[f]);
     }
+    g = {};
     e.forEach(function(x) { 
-        f[x] = (f[x] || 0) + 1; 
+        g[x] = (g[x] || 0) + 1; 
     });
-    let x = "";
-    if(f.HEAD > f.TAIL){
-        if (a) {
-            x = "you WIN";
-        } else {
-            x = "you LOSE";
-        }
-    } else {
-        if (a) {
-            x = "you LOSE";
-        } else {
-            x = "you WIN";
-        }
+    let h = g.HEAD;
+    let j = g.TAIL;
+    let k;
+    if (h > j || j === undefined) {
+        j = 0;
+        k = "HEAD";
+    } else if (h < j || h === undefined) {
+        h = 0;
+        k = "TAIL"
     }
-    alert('You choose to flip ' + b + ' times and we did it for you...');
-    alert('Your result is: \n\n' + e.join(', ') + '\n\nWhich means you got ' + f.HEAD + ' times HEAD and ' + f.TAIL + ' times TAIL. \n\nAfter all ' + x + '.');
+    let l;
+    if (c === k) {
+        l = "You are the winner.";
+    } else {
+        l = "You are the looser.";
+    }
+    alert('Your result is: \n\n' + e.join(', ') + '\n\nWhich means you got ' + h + ' times HEAD and ' + j + ' times TAIL. \n\nAfter all winner is ' + k + '. ' + l);
 }
