@@ -121,12 +121,16 @@ function flipCoin() {
     let h = g.HEAD;
     let j = g.TAIL;
     let k;
-    if (h > j || j === undefined) {
+    if (j === undefined) {
         j = 0;
         k = "HEAD";
-    } else if (h < j || h === undefined) {
+    } else if (h === undefined) {
         h = 0;
         k = "TAIL"
+    } else if (h > j) {
+        k = "HEAD";
+    } else {
+        k = "TAIL";
     }
     let l;
     if (c === k) {
