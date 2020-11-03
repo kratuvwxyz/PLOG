@@ -47,13 +47,13 @@ function myTimer() {
     let code2 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}`;
 
     // adding value in section two
-    $("#section2").text(code2).addClass('btn btn-info btn-lg btn-fix-width').click((event) => { clickCopy(event) });
+    $("#section2").text(code2).addClass('btn btn-light btn-lg btn-fix-width').click((event) => { clickCopy(event) });
 
     // adding Year Quarter Week log code2
     let code3 = `${time.format('YY')}0${time.format('Q')}${time.format('ww')}0${time.format('E')}${time.format('HH')}${time.format('mm')}`;
 
     // adding value in section three
-    $("#section3").text(code3).addClass('btn btn-warning btn-lg btn-fix-width').click((event) => { clickCopy(event) });
+    $("#section3").text(code3).addClass('btn btn-light btn-lg btn-fix-width').click((event) => { clickCopy(event) });
 
     // if you don't want to use moment.js then use this one (vanila javascript)
     // let d = new Date();
@@ -66,13 +66,16 @@ function myTimer() {
     // adding time from 1970 till now in microsecond
     let code5 = Date.now();
     // adding value in section five
-    $("#section5").text(code5).addClass('btn btn-danger btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event) });
+    $("#section5").text(code5).addClass('btn btn-light btn-lg btn-fix-width btn-block').click((event) => { clickCopy(event) });
 
     // password
-    $("#section6").text(password.join("")).addClass('btn btn-dark btn-lg btn-block').click((event) => { clickCopy(event) });
+    $("#section6").text(password.join("")).addClass('btn btn-warning btn-lg btn-block').click((event) => { clickCopy(event) });
 
     // flip coin
     $("#section7").text('Flip the Coin').addClass('btn btn-success btn-lg btn-fix-width btn-block');
+
+    // adding value in section three
+    $("#section8").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ").addClass('btn btn-info btn-lg btn-fix-width').click((event) => { clickCopy(event) });
 }
 
 // set interval for every minute
