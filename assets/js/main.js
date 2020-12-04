@@ -165,7 +165,7 @@ function flipCoin() {
   do {
     d = parseInt(
       prompt(
-        "How many times do you want to flip your coin? \n\nRemember, to get a right result, flip number has to be a odd number only."
+        "How many times do you want to flip your coin? \n\nRemember: Flip number has to be odd only to get the final result."
       )
     );
   } while (isNaN(d) || d % 2 === 0);
@@ -200,15 +200,15 @@ function flipCoin() {
     l = "You are the looser.";
   }
   alert(
-    "Your result is: \n\n" +
-      e.join(", ") +
-      "\n\nWhich means you got " +
+    "You got " +
       h +
       " times HEAD and " +
       j +
       " times TAIL. \n\nAfter all winner is " +
       k +
       ". " +
-      l
+      l + 
+    "\n\nCheck your result:\n\n" +
+    e.join(", ")
   );
 }
