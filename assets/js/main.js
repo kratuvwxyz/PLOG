@@ -51,7 +51,7 @@ function myTimer() {
     .addClass("btn-sect-1")
     .css(
       "font-size",
-      "25vw"
+      "5vw"
     ) /*wW / 1.0625 + "%" || .hover(function(){$(this).css('font-size', (wW/1.0625) + "%")},function(){$(this).css('font-size', (wW/1.075) + "%")}).active(function(){$(this).css('font-size', (wW/1.0725) + "%")}) */
     .click(function () {
       $(this).css("font-size", wW / 1.0725 + "%");
