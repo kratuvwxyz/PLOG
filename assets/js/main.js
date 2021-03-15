@@ -53,9 +53,9 @@ function myTimer() {
       "font-size",
       "15vw"
     ) /*wW / 1.0625 + "%" || .hover(function(){$(this).css('font-size', (wW/1.0625) + "%")},function(){$(this).css('font-size', (wW/1.075) + "%")}).active(function(){$(this).css('font-size', (wW/1.0725) + "%")}) */
-    .click(function () {
-      $(this).css("font-size", "14vw");
-    })
+    // .click(function () {
+    //   $(this).css("font-size", "14vw");
+    // })
     .click((event) => {
       clickCopy(event);
     });
