@@ -12,12 +12,13 @@ body {
 }
 
 .btn-sect-1 {
-    padding: 20px;
+    // padding: 20px;
     margin: auto;
     background-color: $whitesmoke;
     color: $primary-color;
     width: 100%;
     text-align: center;
+    border-radius: 10px;
 
     &:hover {
         background-color: darken($whitesmoke, 10%);
