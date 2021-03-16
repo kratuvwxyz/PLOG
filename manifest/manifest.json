@@ -3,22 +3,22 @@
     "short_name": "PLOG",
     "icons": [
         {
-            "src": "./images/touch/blue.png",
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
             "sizes": "128x128",
             "type": "image/png"
         },
         {
-            "src": "./images/touch/blue.png",
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
             "sizes": "152x152",
             "type": "image/png"
         },
         {
-            "src": "./images/touch/blue.png",
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "./images/touch/blue.png",
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
             "sizes": "192x192",
             "type": "image/png"
         }

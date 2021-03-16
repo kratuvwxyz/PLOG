@@ -4,7 +4,7 @@
   "launch_path": "../index.html",
   "description": "Project Logs, Time Logs, Password Generator, Lorem Ipsum, ¯\_(ツ)_/¯ etc.",
   "icons": {
-    "128": "./images/touch/icon-128x128.png"
+    "128": "https://desaign.app/clients/cli/images/1x/black.png"
   },
   "developer": {
     "name": "Kratu Desai",
