@@ -1,11 +1,22 @@
 # PROJECT LOG GENERATOR
 
-CLICK ANY BOX TO COPY THE TEXT
+- Click any box to copy the text.
+- Logs:
+    - Year Month Day Hour Minute
+    - Year Quarter Week
+    - Year Quarter Week Day Hour Minute
+    - Year Quarter Week Day Hour Minute Seconds
+    - Milliseconds since January 1, 1970
+- Password Generator randomly generate 20 characters long password 
+- Flip the Coin:
+    - Make a decision by flipping couin as much as you want
+- Lorem Ipsum:
+    - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
 
 ### Version
 
 - **2103151827**
-- Last Update: 2021/03/15 
+✔ Last Update @done (March 24th 2021, 15:51)
 
 ### Standards
 
@@ -13,13 +24,20 @@ CLICK ANY BOX TO COPY THE TEXT
 
 ### Components
 
-- Bootstrap, JQuery, Manifest
+- JQuery, Bootstrap, Google Fonts, SVG
 
 ### Software
 
 - Visual Studio Code Editor
 - Github for versioning
 
+### CONTRIBUTE
+
+- A [contributing guideline](https://github.com/kratuvwxyz/CONTRIBUTE) available.
+
+### LICENSE
+
+- [MIT](https://github.com/kratuvwxyz/LICENSE) © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 
