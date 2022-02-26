@@ -138,7 +138,7 @@ setInterval(oneMinute, 60000);
 function oneMinute() {
   // password generator
   password = [];
-  let a = "$#@abcdefghkmnpqrstuvwxyz23456789";
+  let a = "$#@abcdefghkmnpqrstuvwxyz23456789&%?";
   let b = a.toUpperCase();
   let c = a.concat(b).split("");
   for (let i = 0; i < 20; i++) {
@@ -165,11 +165,11 @@ function flipCoin() {
   do {
     d = parseInt(
       prompt(
-        "How many times do you want to flip your coin? \n\nRemember: Flip number has to be odd only to get the final result."
+        "How many times do you want to flip your coin? \n\n\[Remember: Flip number has to be an odd number to get the conclusive result.\]"
       )
     );
   } while (isNaN(d) || d % 2 === 0);
-  alert("You choose to flip " + d + " times and we did it for you...");
+  alert("You choose to flip \[" + d + "\] times and we did it for you...");
   let e = [];
   for (let i = 0; i < d; i++) {
     let f = Math.floor(Math.random() * 2);

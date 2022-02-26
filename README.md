@@ -37,7 +37,7 @@
 
 ### LICENSE
 
-- [MIT](https://github.com/kratuvwxyz/LICENSE) © 2021 Kratu Desai, DESAIGN LLC.
+- [MIT](https://github.com/kratuvwxyz/LICENSE) © 2022 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 
@@ -45,7 +45,7 @@ Thank you for your time and consideration. My mantra is simple, *chase perfectio
 
 <hr/>
 
-<img src="https://desaign.app/clients/cli/images/logo/desaign-logo-black.png" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2021. <a href="https://desaign.app" target="_blank" style="text-decoration:none;">DESAIGN STUDIO</a>. All Rights Reseverd. &#160;
+<img src="https://desaign.app/clients/cli/images/logo/desaign-logo-black.png" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2022. <a href="https://desaign.app" target="_blank" style="text-decoration:none;">DESAIGN STUDIO</a>. All Rights Reseverd. &#160;
 <a href="https://www.facebook.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/facebook.png" alt="Facebook" width="25" /></a> &#160;
 <a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/twitter.png" alt="Twitter" width="25" /></a> &#160;
 <a href="https://www.linkedin.com/company/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/linkedin.png" alt="Linked In" width="25" /></a> &#160;
