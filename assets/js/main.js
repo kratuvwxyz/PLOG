@@ -16,7 +16,6 @@ window.onresize = wWf;
 
 /* click and copy function */
 clickCopy = (event) => {
-  console.log(event);
   let el = $("<textarea></textarea>");
   let elId = "#" + event.target.id;
   let text =
@@ -117,6 +116,10 @@ function myTimer() {
     .addClass("btn btn-warning btn-lg btn-block")
     .click((event) => {
       clickCopy(event);
+      
+      // audio
+      let audio = document.getElementById("audio");
+      audio.play();
     });
 
   // flip coin
