@@ -2,21 +2,24 @@
 
 - Click any box to copy the text.
 - Logs:
-    - Year Month Day Hour Minute
-    - Year Quarter Week
-    - Year Quarter Week Day Hour Minute
-    - Year Quarter Week Day Hour Minute Seconds
-    - Milliseconds since January 1, 1970
-- Password Generator randomly generate 20 characters long password 
+  - Year Month Day Hour Minute
+  - Year Quarter Week
+  - Year Quarter Week Day Hour Minute
+  - Year Quarter Week Day Hour Minute Seconds
+  - Milliseconds since January 1, 1970
+- Password Generator
+  - Randomly generate 20 characters long password
 - Flip the Coin:
-    - Make a decision by flipping couin as much as you want
+  - Make a decision by flipping coin as much as you want
 - Lorem Ipsum:
-    - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
+  - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
+- Random Words Generator
+  - Randomly generate 20 characters 4 words
 
 ### Version
 
-- **2103151827**
-✔ Last Update @done (March 24th 2021, 15:51)
+- **2206041111**
+✔ Last Updat @done (6/4/2022, 11:11:11 AM)
 
 ### Standards
 
@@ -41,7 +44,7 @@
 
 ## CONTACT
 
-Thank you for your time and consideration. My mantra is simple, *chase perfection to catch excellence*. I hope you enjoy my work. **I'd love to hear from you.** Please email me at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
+Thank you for your time and consideration. My mantra is simple, _chase perfection to catch excellence_. I hope you enjoy my work. **I'd love to hear from you.** Please email me at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
 
 <hr/>
 
