@@ -81,20 +81,7 @@ function createRandomWord() {
   let x = fourArray(3, 5, 4, 6, 5, 7, 9, 20);
   let y = [];
   for (let i = 0; i < x.length; i++) {
-    let z =
-      x[i] === 3
-        ? a3[Math.floor(Math.random() * a3.length)]
-        : x[i] === 4
-        ? a4[Math.floor(Math.random() * a4.length)]
-        : x[i] === 5
-        ? a5[Math.floor(Math.random() * a5.length)]
-        : x[i] === 6
-        ? a6[Math.floor(Math.random() * a6.length)]
-        : x[i] === 7
-        ? a7[Math.floor(Math.random() * a7.length)]
-        : x[i] === 8
-        ? a8[Math.floor(Math.random() * a8.length)]
-        : a9[Math.floor(Math.random() * a9.length)];
+    let z = x[i] === 3 ? a3[Math.floor(Math.random() * a3.length)] : x[i] === 4 ? a4[Math.floor(Math.random() * a4.length)] : x[i] === 5 ? a5[Math.floor(Math.random() * a5.length)] : x[i] === 6 ? a6[Math.floor(Math.random() * a6.length)] : x[i] === 7 ? a7[Math.floor(Math.random() * a7.length)] : x[i] === 8 ? a8[Math.floor(Math.random() * a8.length)] : a9[Math.floor(Math.random() * a9.length)];
     y.push(z);
   }
   return camelize(y.join(" "));
@@ -117,10 +104,7 @@ window.onresize = wWf;
 clickCopy = (event) => {
   let el = $("<textarea></textarea>");
   let elId = "#" + event.target.id;
-  let text =
-    elId === "#section8"
-      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      : $(elId).text();
+  let text = elId === "#section8" ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." : $(elId).text();
   $(el).val(text);
   $("#app").append(el);
   $(el).select();
@@ -139,18 +123,13 @@ function myTimer() {
   let time = moment();
 
   // adding Year Month Date Hour Minute in one code
-  let code = `${time.format("YY")}${time.format("MM")}${time.format(
-    "DD"
-  )}${time.format("HH")}${time.format("mm")}`;
+  let code = `${time.format("YY")}${time.format("MM")}${time.format("DD")}${time.format("HH")}${time.format("mm")}`;
 
   // adding value in section one
   $("#section1")
     .text(code)
     .addClass("btn-sect-1")
-    .css(
-      "font-size",
-      "15vw"
-    ) /*wW / 1.0625 + "%" || .hover(function(){$(this).css('font-size', (wW/1.0625) + "%")},function(){$(this).css('font-size', (wW/1.075) + "%")}).active(function(){$(this).css('font-size', (wW/1.0725) + "%")}) */
+    .css("font-size", "15vw") /*wW / 1.0625 + "%" || .hover(function(){$(this).css('font-size', (wW/1.0625) + "%")},function(){$(this).css('font-size', (wW/1.075) + "%")}).active(function(){$(this).css('font-size', (wW/1.0725) + "%")}) */
     // .click(function () {
     //   $(this).css("font-size", "14vw");
     // })
@@ -170,9 +149,7 @@ function myTimer() {
     });
 
   // adding Year Quarter Week log code2
-  let code3 = `${time.format("YY")}0${time.format("Q")}${time.format(
-    "ww"
-  )}0${time.format("E")}${time.format("HH")}${time.format("mm")}`;
+  let code3 = `${time.format("YY")}0${time.format("Q")}${time.format("ww")}0${time.format("E")}${time.format("HH")}${time.format("mm")}`;
 
   // adding value in section three
   $("#section3")
@@ -185,11 +162,7 @@ function myTimer() {
   // if you don't want to use moment.js then use this one (vanila javascript)
   // let d = new Date();
   // let dd = `${d.getFullYear().toString()[2]}${d.getFullYear().toString()[3]}${!d.getMonth().toString()[1] ? 0 + "" + (d.getMonth() + 1) : (d.getMonth() + 1)}${!d.getDate().toString()[1] ? 0 + "" + d.getDate() : d.getDate()}${!d.getHours().toString()[1] ? 0 + "" + d.getHours() : d.getHours()}${!d.getMinutes().toString()[1] ? 0 + "" + d.getMinutes() : d.getMinutes()}${!d.getSeconds().toString()[1] ? 0 + "" + d.getSeconds() : d.getSeconds()}`;
-  let code4 = `${time.format("YY")}0${time.format("Q")}${time.format(
-    "ww"
-  )}0${time.format("E")}${time.format("HH")}${time.format("mm")}${time.format(
-    "ss"
-  )}`;
+  let code4 = `${time.format("YY")}0${time.format("Q")}${time.format("ww")}0${time.format("E")}${time.format("HH")}${time.format("mm")}${time.format("ss")}`;
 
   // adding value in section four
   $("#section4")
@@ -222,9 +195,7 @@ function myTimer() {
     });
 
   // flip coin
-  $("#section7")
-    .text("Flip the Coin")
-    .addClass("btn btn-success btn-lg btn-fix-width btn-block");
+  $("#section7").text("Flip the Coin").addClass("btn btn-success btn-lg btn-fix-width btn-block");
 
   // adding value in section three
   $("#section8")
@@ -279,11 +250,7 @@ function flipCoin() {
   }
   let d;
   do {
-    d = parseInt(
-      prompt(
-        "How many times do you want to flip your coin? \n\nRemember: Flip number has to be an odd number to get the conclusive result."
-      )
-    );
+    d = parseInt(prompt("How many times do you want to flip your coin? \n\nRemember: Flip number has to be an odd number to get the conclusive result."));
   } while (isNaN(d) || d % 2 === 0);
   alert("You choose to flip " + d + " times and we did it for you...");
   let e = [];
@@ -315,16 +282,35 @@ function flipCoin() {
   } else {
     l = "You are the looser.";
   }
-  alert(
-    "You got " +
-      h +
-      " times HEAD and " +
-      j +
-      " times TAIL. \n\nAfter all winner is " +
-      k +
-      ". " +
-      l +
-      "\n\nCheck your result:\n\n" +
-      e.join(", ")
-  );
+  alert("You got " + h + " times HEAD and " + j + " times TAIL. \n\nAfter all winner is " + k + ". " + l + "\n\nCheck your result:\n\n" + e.join(", "));
 }
+// Rock Paper Scissors
+let rps = ["ROCK", "PAPER", "SCISSORS"];
+const result = (x, y) => {
+  (x === "ROCK" && y === "PAPER") || (x === "PAPER" && y === "SCISSORS") || (x === "SCISSORS" && y === "ROCK") ? $(".sec10").addClass("btn-danger") : $(".sec10").addClass("btn-success");
+};
+const match = (x, y) => {
+  $(".sec10").removeClass("btn-primary");
+  x != y ? result(x, y) : $(".sec10").addClass("btn-info");
+};
+const startRPS = (x) => {
+  $(".sec10").removeClass("btn-info btn-danger btn-success").addClass("btn-primary");
+  let compRPS = rps[Math.floor(Math.random() * rps.length)];
+  createLayout(compRPS);
+  match(x.toUpperCase(), compRPS);
+};
+const getrpsvalue = (e) => {
+  startRPS(e.value);
+};
+const createLayout = (x) => {
+    $("#section10").empty();
+    for (let i = 0; i < rps.length; i++) {
+      let buttona = $("<button>");
+      $(buttona).addClass("btn btn-primary btn-lg sec10").text(rps[i]).attr("value", rps[i]).attr("onclick", "getrpsvalue(this)");
+      x === rps[i] ? $(buttona).css("font-weight", "bold").css("color", "black") : $(buttona).css("font-weight", "light").css("color", "var(--yellow)");
+      $("#section10").append(buttona);
+    }
+}
+$(document).ready(() => {
+    createLayout();
+});
