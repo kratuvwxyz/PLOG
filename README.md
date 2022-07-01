@@ -15,11 +15,13 @@
   - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
 - Random Words Generator
   - Randomly generate 20 characters 4 words
+- Rock Paper Scissors Game
+  - Choose in between Rock, Paper or Scissors and see if you get Green (Win), Red (Loose), or Blue (Tie).
 
 ### Version
 
-- **2206041111**
-  ✔ Last Update @done (6/4/2022, 11:11:11 AM)
+- **2206300800**
+  ✔ Last Update @done (6/30/2022, 08:00:00 PM)
 
 ### Standards
 

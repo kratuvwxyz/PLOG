@@ -1,7 +1,9 @@
 Added:
+- Rock, Paper, or Scissors game added
 
 
 Changed:
+- layout to put everying in single row
 
 
 Removed:
@@ -11,6 +13,7 @@ Fixed:
 
 
 Security:
+- Moment.js file updated to remove some security issue
 
 
 Released:
