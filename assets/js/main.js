@@ -108,12 +108,13 @@ function createRandomWord() {
 }
 
 // run the function first time
-let drowCheck = createRandomWord();
+let drowCheck, drow;
 
-while (drowCheck.length === 20) {
-  let draw = drowCheck;
+do {
+  drowCheck = createRandomWord();
   console.log(drowCheck.length);
-}
+} while (drowCheck.length <= 19 || drowCheck.length >= 21);
+drow = drowCheck;
 
 /* Window Width for Resizing fonts */
 // window width
