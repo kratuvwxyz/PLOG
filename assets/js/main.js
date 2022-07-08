@@ -242,21 +242,21 @@ oneMinute();
 // flip the coin script
 function flipCoin() {
   let a = ["HEAD", "TAIL"];
-  alert("First, select your side.");
-  let b = confirm("Is it HEAD? \n\nOK to confirm.");
+  alert("First, select your side. \n\nClick OK to next.");
+  let b = confirm("Is it HEAD? \n\nClick OK to confirm. CANCLE to select TAIL.");
   let c = "";
   if (b) {
-    alert("Good choice, you select HEAD.");
+    alert("Good choice, you select HEAD. \n\nClick OK to next.");
     c = "HEAD";
   } else {
-    alert("Good choice, you select TAIL.");
+    alert("Good choice, you select TAIL. \n\nClick OK to next.");
     c = "TAIL";
   }
   let d;
   do {
     d = parseInt(prompt("How many times do you want to flip your coin? \n\nRemember: Flip number has to be an odd number to get the conclusive result."));
   } while (isNaN(d) || d % 2 === 0);
-  alert("You choose to flip " + d + " times and we did it for you...");
+  alert("You choose to flip " + d + " times and we did it for you... \n\nClick OK to next.");
   let e = [];
   for (let i = 0; i < d; i++) {
     let f = Math.floor(Math.random() * 2);
@@ -282,12 +282,13 @@ function flipCoin() {
   }
   let l;
   if (c === k) {
-    l = "You are the winner.";
+    l = "You win.";
   } else {
-    l = "You are the looser.";
+    l = "You loose.";
   }
   alert("You got " + h + " times HEAD and " + j + " times TAIL. \n\nAfter all winner is " + k + ". " + l + "\n\nCheck your result:\n\n" + e.join(", "));
 }
+
 // Rock Paper Scissors
 let rps = ["ROCK", "PAPER", "SCISSORS"],
   rpsResetTimeout;
