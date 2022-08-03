@@ -49,4 +49,13 @@ body {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
+
+.btn {
+  border: 2px solid transparent;
+}
+
+.sec10:hover {
+  border: inset;
+  border: 2px solid #117a8b !important;
+}
 /*# sourceMappingURL=main.css.map */

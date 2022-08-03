@@ -52,3 +52,12 @@ body {
         box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
     }
   }
+
+  .btn {
+    border: 2px solid transparent;
+  }
+
+  .sec10:hover {
+    border: inset;
+    border: 2px solid darken($cyan, 10%) !important;
+  }
