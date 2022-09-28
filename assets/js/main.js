@@ -345,7 +345,7 @@ $(".inputQR").keyup(function () {
 
 $(document).on("click", ".qrClass", () => {
     $("#showQR").empty();
-    let qrA = $(".inputQR").val().replace("#", "");
+    let qrA = $(".inputQR").val().replace("'", "&#39;").replace("#", "");
     let size = Math.floor($(".qrClass").width()) < 547 ? Math.floor($(".qrClass").width()) : 547;
     $("#section11").text("QR-CODE Generated").removeClass("btn-success btn-danger").addClass("btn-info");
     $("#showQR")
