@@ -59,3 +59,6 @@ Thank you for your time and consideration. My mantra is simple, _chase perfectio
 <a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/twitter.png" alt="Twitter" width="25" /></a> &#160;
 <a href="https://www.linkedin.com/company/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/linkedin.png" alt="Linked In" width="25" /></a> &#160;
 <a href="https://desaigner.info" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/blog.png" alt="DESAIGN BLOG" width="25" /></a> &#160;
+
+
+<t:1664467260:Y>
