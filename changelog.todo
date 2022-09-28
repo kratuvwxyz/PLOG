@@ -1,9 +1,11 @@
-Added:
-- Rock, Paper, or Scissors game added
+Added: 
+✔ Rock, Paper, or Scissors game added @done (3/28/2022, 10:44:23 AM)
+✔ QR Code Generator added @done (6/28/2022, 10:44:20 AM)
+✔ TXT File Generator added @done (9/28/2022, 10:44:25 AM)
 
 
 Changed:
-- layout to put everying in single row
+✔ layout to put everying in single row @done (6/28/2022, 10:45:01 AM)
 
 
 Removed:
@@ -13,12 +15,20 @@ Fixed:
 
 
 Security:
-- Moment.js file updated to remove some security issue
+✔ Moment.js file updated to remove some security issue @done (9/28/2022, 10:45:31 AM)
 
 
 Released:
 
     
 Requested:
-- RPS, when person loose, scratch the word
-- RPS, toggle win, loose, tie results
+    RPS:
+        ☐ when person loose, scratch the word
+        ☐ toggle win, loose, tie results
+        ☐ change layout when click
+    QR Code Generator:
+        ☐ Fix '#' issue
+    General:
+        ☐ When click on 'QR Code Generator' or 'TXT File Generator', avoid copy text
+        
+
