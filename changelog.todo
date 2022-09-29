@@ -1,22 +1,23 @@
 Added: 
-✔ Rock, Paper, or Scissors game added @done (3/28/2022, 10:44:23 AM)
-✔ QR Code Generator added @done (6/28/2022, 10:44:20 AM)
-✔ TXT File Generator added @done (9/28/2022, 10:44:25 AM)
+    ✔ Rock, Paper, or Scissors game added @done (3/28/2022, 10:44:23 AM)
+    ✔ QR Code Generator added @done (6/28/2022, 10:44:20 AM)
+    ✔ TXT File Generator added @done (9/28/2022, 10:44:25 AM)
 
 
 Changed:
-✔ layout to put everying in single row @done (6/28/2022, 10:45:01 AM)
+    ✔ layout to put everying in single row @done (6/28/2022, 10:45:01 AM)
 
 
 Removed:
 
 
 Fixed:
+    ✔ When click on 'Flip The Coin', 'Rock, Paper, Scissors', 'QR Code Generator' or 'TXT File Generator', avoid copy text @done (9/29/2022, 12:49:45 PM)
 
 
 Security:
-✔ Moment.js file updated to remove some security issue @done (9/28/2022, 10:45:31 AM)
-
+    ✔ Moment.js file updated to remove some security issue @done (9/28/2022, 10:45:31 AM)
+    
 
 Released:
 
@@ -27,8 +28,7 @@ Requested:
         ☐ toggle win, loose, tie results
         ☐ change layout when click
     QR Code Generator:
-        ☐ Fix '#' issue
+        ☐ Fix '#' issue @high
     General:
-        ☐ When click on 'QR Code Generator' or 'TXT File Generator', avoid copy text
         
 

@@ -66,14 +66,24 @@ $(function () {
 let audio = document.getElementById("audio");
 
 /* button layout */
-function timeButton(a, b, c, d, e) {
+/* 
+a = id
+b = text
+c = add classes
+d = add css condition
+e = add css value
+f = true/false to copy or not copy button text
+*/
+function timeButton(a, b, c, f, d, e) {
     $(a)
         .text(b)
         .addClass(c)
         .css(d, e)
         .click((event) => {
-            clickCopy(event);
-            audio.play();
+            if (f === true) {
+                clickCopy(event);
+                audio.play();
+            }
         });
 }
 
@@ -221,11 +231,11 @@ function createRandomWord() {
 let lorIps = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound on the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
     "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
     "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.",
-    "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+    "In a free hour, when our power of choice is untrammeled and when nothing prevents our ability to do what we like best, every pleasure is welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures must be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
 ];
 let lorIpsText = () => lorIps[Math.floor(Math.random() * lorIps.length)];
 
@@ -413,15 +423,15 @@ setInterval(myTimer, 1000);
 // set every second and minute changing buttons
 function myTimer() {
     // Year Month Date Hour Minute
-    timeButton("#section1", `${moment().format("YY")}${moment().format("MM")}${moment().format("DD")}${moment().format("HH")}${moment().format("mm")}`, "btn-sect-1", "font-size", "15vw");
+    timeButton("#section1", `${moment().format("YY")}${moment().format("MM")}${moment().format("DD")}${moment().format("HH")}${moment().format("mm")}`, "btn-sect-1", true, "font-size", "15vw");
     // Year Quarter Week
-    timeButton("#section2", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}`, "btn btn-light btn-lg btn-fix-width btn-block");
+    timeButton("#section2", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
     // Year Quarter Week Day Hour Minute
-    timeButton("#section3", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}`, "btn btn-light btn-lg btn-fix-width btn-block");
+    timeButton("#section3", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
     // Year Quarter Week Day Hour Minute Second
-    timeButton("#section4", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}${moment().format("ss")}`, "btn btn-light btn-lg btn-fix-width btn-block");
+    timeButton("#section4", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}${moment().format("ss")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
     // adding time from 1970 till now in microsecond
-    timeButton("#section5", Date.now(), "btn btn-light btn-lg btn-fix-width btn-block");
+    timeButton("#section5", Date.now(), "btn btn-light btn-lg btn-fix-width btn-block", true);
 
     // set interval for every minute
     if (moment().second() === 0) {
@@ -431,13 +441,13 @@ function myTimer() {
 
 function oneMinute() {
     // password
-    timeButton("#section6", createPassword(), "btn btn-warning btn-lg btn-block");
+    timeButton("#section6", createPassword(), "btn btn-warning btn-lg btn-block", true);
 
     // generate random words
     do {
         drow = createRandomWord();
     } while (drow.length <= 19 || drow.length >= 21);
-    timeButton("#section9", drow, "btn btn-warning btn-lg btn-block");
+    timeButton("#section9", drow, "btn btn-warning btn-lg btn-block", true);
 }
 oneMinute();
 
@@ -445,7 +455,7 @@ oneMinute();
 timeButton("#section7", "Flip The Coin", "btn btn-success btn-lg btn-fix-width btn-block");
 
 // Lorem Ipsum
-timeButton("#section8", "Lorem Ipsum", "btn btn-info btn-lg btn-fix-width btn-block");
+timeButton("#section8", "Lorem Ipsum", "btn btn-info btn-lg btn-fix-width btn-block", true);
 
 // QR Code
 timeButton("#section11", "QR-CODE Generator", "btn btn-danger btn-lg btn-fix-width btn-block");
