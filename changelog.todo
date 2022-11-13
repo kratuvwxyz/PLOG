@@ -6,9 +6,13 @@ Added:
 
 Changed:
     ✔ layout to put everying in single row @done (6/28/2022, 10:45:01 AM)
-
-
+    ✔ RPS -- change layout when click @done (11/12/2022, 9:36:48 AM)
+    ✔ TimeLog -- Update main time log with adding sub categories @done (11/12/2022, 9:03:14 PM)
+    ✔ RPS -- when person loose, scratch the word @done (11/12/2022, 9:04:24 PM)
+    
+    
 Removed:
+    ✔ Remove all time log buttons @done (11/12/2022, 9:03:16 PM)
 
 
 Fixed:
@@ -23,12 +27,7 @@ Released:
 
     
 Requested:
-    RPS:
-        ☐ when person loose, scratch the word
-        ☐ toggle win, loose, tie results
-        ☐ change layout when click
-    QR Code Generator:
-        ☐ Fix '#' issue @high
-    General:
-        
+    ☐ RPS -- toggle win, loose, tie results
+    ☐ QRCode -- Fix '#' issue @high
+    ☐ TimeLog -- Change time every minute
 
