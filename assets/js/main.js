@@ -213,7 +213,20 @@ function createRandomWord() {
     let x = fourArray(3, 5, 4, 6, 5, 7, 9, 20);
     let y = [];
     for (let i = 0; i < x.length; i++) {
-        let z = x[i] === 3 ? a3[Math.floor(Math.random() * a3.length)] : x[i] === 4 ? a4[Math.floor(Math.random() * a4.length)] : x[i] === 5 ? a5[Math.floor(Math.random() * a5.length)] : x[i] === 6 ? a6[Math.floor(Math.random() * a6.length)] : x[i] === 7 ? a7[Math.floor(Math.random() * a7.length)] : x[i] === 8 ? a8[Math.floor(Math.random() * a8.length)] : a9[Math.floor(Math.random() * a9.length)];
+        let z =
+            x[i] === 3
+                ? a3[Math.floor(Math.random() * a3.length)]
+                : x[i] === 4
+                ? a4[Math.floor(Math.random() * a4.length)]
+                : x[i] === 5
+                ? a5[Math.floor(Math.random() * a5.length)]
+                : x[i] === 6
+                ? a6[Math.floor(Math.random() * a6.length)]
+                : x[i] === 7
+                ? a7[Math.floor(Math.random() * a7.length)]
+                : x[i] === 8
+                ? a8[Math.floor(Math.random() * a8.length)]
+                : a9[Math.floor(Math.random() * a9.length)];
         y.push(z);
     }
     return camelize(y.join(" "));
@@ -327,7 +340,17 @@ const createLayout = (x, y, pw, uw) => {
     for (let i = 0; i < rps.length; i++) {
         let buttona = $("<button>");
         $(buttona).addClass("btn btn-lg sec10").text(rps[i]).attr("value", rps[i]).attr("onclick", "getrpsvalue(this)");
-        x === rps[i] && y === rps[i] && pw === true && uw === true ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "blue") : x === rps[i] && uw === true ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "green") : x === rps[i] && uw === false ? $(buttona).css("font-weight", "light").css("color", "black").css("text-decoration", "line-through").css("background-color", "red") : y === rps[i] && pw === true ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "green") : y === rps[i] && pw === false ? $(buttona).css("font-weight", "light").css("color", "black").css("text-decoration", "line-through").css("background-color", "red") : $(buttona).css("font-weight", "light").css("color", "#8700ff").css("background-color", "var(--cyan)");
+        x === rps[i] && y === rps[i] && pw === true && uw === true
+            ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "blue")
+            : x === rps[i] && uw === true
+            ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "green")
+            : x === rps[i] && uw === false
+            ? $(buttona).css("font-weight", "light").css("color", "black").css("text-decoration", "line-through").css("background-color", "red")
+            : y === rps[i] && pw === true
+            ? $(buttona).css("font-weight", "bold").css("color", "white").css("background-color", "green")
+            : y === rps[i] && pw === false
+            ? $(buttona).css("font-weight", "light").css("color", "black").css("text-decoration", "line-through").css("background-color", "red")
+            : $(buttona).css("font-weight", "light").css("color", "#8700ff").css("background-color", "var(--cyan)");
         $("#section10").append(buttona);
     }
 };
@@ -419,59 +442,93 @@ $(document).on("click", ".txtClass", () => {
 
 timeButton("#section13", "Memory Game", "btn btn-secondary btn-lg btn-fix-width btn-block");
 
-
 // =======================================================================================================
 // =======================================================================================================
 // Time with Moment JS
 // =======================================================================================================
 // =======================================================================================================
 
-
-let yt, qt, mt, wt, at, dt, ht, it, st, lt = false, str = "";
+let yt,
+    qt,
+    mt,
+    wt,
+    at,
+    dt,
+    ht,
+    it,
+    st,
+    lt = false,
+    str = "";
 
 const stringTimeStamp = () => {
-  
-  lt ? str = Date.now() : str = `${yt ? moment().format("YY") : ""}${qt ? moment().format("Q") : ""}${mt ? moment().format("MM") : ""}${wt ? moment().format("WW") : ""}${at ? moment().day()+1 : ""}${dt ? moment().format("DD") : ""}${ht ? moment().format("HH") : ""}${it ? moment().format("mm") : ""}${st ? moment().format("ss") : ""}`;;
-  // str = str.replace(/\s/g, '');
-  return str;
-}
+    lt
+        ? (str = Date.now())
+        : (str = `${yt ? moment().format("YY") : ""}${qt ? moment().format("Q") : ""}${mt ? moment().format("MM") : ""}${wt ? moment().format("WW") : ""}${at ? moment().day() + 1 : ""}${
+              dt ? moment().format("DD") : ""
+          }${ht ? moment().format("HH") : ""}${it ? moment().format("mm") : ""}${st ? moment().format("ss") : ""}`);
+    // str = str.replace(/\s/g, '');
+    return str;
+};
 
 const onTimeStamp = () => {
-  let ya = ['yt', 'mt', 'dt', 'ht', 'it'];
-  for(let i = 0; i < ya.length; i++) {
-    $(`#${ya[i]}`).toggleClass('active');
-  }
-  yt = true;
-  mt = true;
-  dt = true;
-  ht = true;
-  it = true;
-  stringTimeStamp();
-  return str;
+    let ya = ["yt", "mt", "dt", "ht", "it"];
+    for (let i = 0; i < ya.length; i++) {
+        $(`#${ya[i]}`).toggleClass("active");
+    }
+    yt = true;
+    mt = true;
+    dt = true;
+    ht = true;
+    it = true;
+    stringTimeStamp();
+    return str;
 };
 timeButton("#section1", onTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
 
 const onClickTimeStamp = (x) => {
-  let a = x.value;
-  $(`#${x.value}`).toggleClass('active');
-  a == "yt" ? (yt = !yt , lt = false) : a == "qt" ? (qt = !qt , lt = false) : a == "mt" ? (mt = !mt , lt = false) : a == "wt" ? (wt = !wt , lt = false) : a == "at" ? (at = !at , lt = false) : a == "dt" ? (dt = !dt , lt = false) : a == "ht" ? (ht = !ht , lt = false) : a == "it" ? (it = !it , lt = false) : a == "st" ? (st = !st , lt = false) : lt = !lt;
-  
-  lt ? ($('.active').addClass('disabled'), $("#lt").addClass('active').removeClass('disabled')) : ($('.active').removeClass('disabled'), $("#lt").removeClass('active'));
-  
-  !yt && !qt && !mt && !wt && !at && !dt && !ht && !it && !st && !lt ? (alert('You need to choose atleast one time log'), timeButton("#section1", onTimeStamp(), "btn-sect-1", true, "font-size", "9vw")) : timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
-}
+    let a = x.value;
+    $(`#${x.value}`).toggleClass("active");
+    a == "yt"
+        ? ((yt = !yt), (lt = false))
+        : a == "qt"
+        ? ((qt = !qt), (lt = false))
+        : a == "mt"
+        ? ((mt = !mt), (lt = false))
+        : a == "wt"
+        ? ((wt = !wt), (lt = false))
+        : a == "at"
+        ? ((at = !at), (lt = false))
+        : a == "dt"
+        ? ((dt = !dt), (lt = false))
+        : a == "ht"
+        ? ((ht = !ht), (lt = false))
+        : a == "it"
+        ? ((it = !it), (lt = false))
+        : a == "st"
+        ? ((st = !st), (lt = false))
+        : (lt = !lt);
+
+    lt ? ($(".active").addClass("disabled"), $("#lt").addClass("active").removeClass("disabled")) : ($(".active").removeClass("disabled"), $("#lt").removeClass("active"));
+
+    !yt && !qt && !mt && !wt && !at && !dt && !ht && !it && !st && !lt
+        ? (alert("You need to choose atleast one time log"), timeButton("#section1", onTimeStamp(), "btn-sect-1", true, "font-size", "9vw"))
+        : timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+};
 
 /* set interval for every second */
 
 setInterval(myTimer, 1000);
 // set every second and minute changing buttons
 function myTimer() {
-    if(st || lt) {
-      timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+    if (st || lt) {
+        timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
     }
 
     // set interval for every minute
     if (moment().second() === 0) {
+        if (!st || !lt) {
+            timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+        }
         oneMinute();
     }
 }

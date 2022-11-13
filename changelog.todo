@@ -17,6 +17,7 @@ Removed:
 
 Fixed:
     ✔ When click on 'Flip The Coin', 'Rock, Paper, Scissors', 'QR Code Generator' or 'TXT File Generator', avoid copy text @done (9/29/2022, 12:49:45 PM)
+    ✔ TimeLog -- Change time every minute @done (11/12/2022, 9:20:39 PM)
 
 
 Security:
@@ -29,5 +30,4 @@ Released:
 Requested:
     ☐ RPS -- toggle win, loose, tie results
     ☐ QRCode -- Fix '#' issue @high
-    ☐ TimeLog -- Change time every minute
 
