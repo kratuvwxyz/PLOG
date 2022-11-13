@@ -413,25 +413,62 @@ $(document).on("click", ".txtClass", () => {
 
 // =======================================================================================================
 // =======================================================================================================
+// Memory Game
+// =======================================================================================================
+// =======================================================================================================
+
+timeButton("#section13", "Memory Game", "btn btn-secondary btn-lg btn-fix-width btn-block");
+
+
+// =======================================================================================================
+// =======================================================================================================
 // Time with Moment JS
 // =======================================================================================================
 // =======================================================================================================
 
-/* set interval for everysecond */
+
+let yt, qt, mt, wt, at, dt, ht, it, st, lt = false, str = "";
+
+const stringTimeStamp = () => {
+  
+  lt ? str = Date.now() : str = `${yt ? moment().format("YY") : ""}${qt ? moment().format("Q") : ""}${mt ? moment().format("MM") : ""}${wt ? moment().format("WW") : ""}${at ? moment().day()+1 : ""}${dt ? moment().format("DD") : ""}${ht ? moment().format("HH") : ""}${it ? moment().format("mm") : ""}${st ? moment().format("ss") : ""}`;;
+  // str = str.replace(/\s/g, '');
+  return str;
+}
+
+const onTimeStamp = () => {
+  let ya = ['yt', 'mt', 'dt', 'ht', 'it'];
+  for(let i = 0; i < ya.length; i++) {
+    $(`#${ya[i]}`).toggleClass('active');
+  }
+  yt = true;
+  mt = true;
+  dt = true;
+  ht = true;
+  it = true;
+  stringTimeStamp();
+  return str;
+};
+timeButton("#section1", onTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+
+const onClickTimeStamp = (x) => {
+  let a = x.value;
+  $(`#${x.value}`).toggleClass('active');
+  a == "yt" ? (yt = !yt , lt = false) : a == "qt" ? (qt = !qt , lt = false) : a == "mt" ? (mt = !mt , lt = false) : a == "wt" ? (wt = !wt , lt = false) : a == "at" ? (at = !at , lt = false) : a == "dt" ? (dt = !dt , lt = false) : a == "ht" ? (ht = !ht , lt = false) : a == "it" ? (it = !it , lt = false) : a == "st" ? (st = !st , lt = false) : lt = !lt;
+  
+  lt ? ($('.active').addClass('disabled'), $("#lt").addClass('active').removeClass('disabled')) : ($('.active').removeClass('disabled'), $("#lt").removeClass('active'));
+  
+  !yt && !qt && !mt && !wt && !at && !dt && !ht && !it && !st && !lt ? (alert('You need to choose atleast one time log'), timeButton("#section1", onTimeStamp(), "btn-sect-1", true, "font-size", "9vw")) : timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+}
+
+/* set interval for every second */
 
 setInterval(myTimer, 1000);
 // set every second and minute changing buttons
 function myTimer() {
-    // Year Month Date Hour Minute
-    timeButton("#section1", `${moment().format("YY")}${moment().format("MM")}${moment().format("DD")}${moment().format("HH")}${moment().format("mm")}`, "btn-sect-1", true, "font-size", "15vw");
-    // Year Quarter Week
-    timeButton("#section2", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
-    // Year Quarter Week Day Hour Minute
-    timeButton("#section3", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
-    // Year Quarter Week Day Hour Minute Second
-    timeButton("#section4", `${moment().format("YY")}0${moment().format("Q")}${moment().format("ww")}0${moment().format("E")}${moment().format("HH")}${moment().format("mm")}${moment().format("ss")}`, "btn btn-light btn-lg btn-fix-width btn-block", true);
-    // adding time from 1970 till now in microsecond
-    timeButton("#section5", Date.now(), "btn btn-light btn-lg btn-fix-width btn-block", true);
+    if(st || lt) {
+      timeButton("#section1", stringTimeStamp(), "btn-sect-1", true, "font-size", "9vw");
+    }
 
     // set interval for every minute
     if (moment().second() === 0) {
