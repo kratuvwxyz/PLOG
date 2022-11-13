@@ -1,31 +1,31 @@
 # PROJECT LOG GENERATOR
 
 - Click any box to copy the text.
-- Logs:
-  - Year Month Day Hour Minute
-  - Year Quarter Week
-  - Year Quarter Week Day Hour Minute
-  - Year Quarter Week Day Hour Minute Seconds
-  - Milliseconds since January 1, 1970
-- Password Generator
-  - Randomly generate 20 characters long password
+- Time Logs:
+  - Select time in between Year, Quarter, Month, Week, Day, Date, Hour, Minute, Second, or Miliseconds (since 1970)
+  - Arrange time can be copied for log or timestamp
 - Flip the Coin:
   - Make a decision by flipping coin as much as you want
-- Lorem Ipsum:
-  - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
-- Random Words Generator
-  - Randomly generate 20 characters 4 words
 - Rock Paper Scissors Game
   - Choose in between Rock, Paper or Scissors and see if you get Green (Win), Red (Loose), or Blue (Tie).
+- Memory Game
+  - Coming Soon*
+- Password Generator
+  - Randomly generate 20 characters long password
+- Random Words Generator
+  - Randomly generate 20 characters 4 words
+- Time Budgetment
+  - Coming Soon*
 - QR Code Generator
   - Create a code with any link or text
 - TXT File Generator
   - Download notes via .TXT file
+- Lorem Ipsum:
+  - Sometimes you need a dummy copy, just click the button and copy the 'Lorem Ipsum'
 
 ### Version
 
-- **2209281100**
-  ✔ Last Update @done (9/28/2022, 11:00:00 AM)
+  - 1.2.2
 
 ### Standards
 
