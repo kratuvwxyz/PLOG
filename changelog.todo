@@ -32,6 +32,12 @@ Requested:
     ☐ QRCode -- Fix '#' issue @high
     ☐ Memory -- create a layout and game structure
     ☐ TB -- create architect
+    ☐ PLOG -- Add timer and project log note taker @critical 
+    ☐ Countdown.html
+        ☐ year, month, date functionality
+        ☐ month, date functionality
+        ☐ add year and months in display
+        ☐ when year and month are the same as current year, then don't show
 
 ✔ Changelog last update @done (11/12/2022, 9:39:48 PM)
     - Commit and Tag (Major.Minor.Patch)
