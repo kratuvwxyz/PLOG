@@ -50,7 +50,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
 
     <!-- Web Application Manifest -->
-    <link rel="manifest" href="./manifest/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes" />
@@ -125,17 +125,18 @@
     <div class="container-fluid">
       <div class="row p-2 section1 my-2">
         <div class="p-3 mb-3" style="overflow: auto; white-space: nowrap;">
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="resetTimeDate" value="resetTimeDate" onclick="onResetStamp(this)">Reset</button>
           <!-- yt, qt, mt, wt, dt, ht, it, st, lt -->
-          <button class="btn btn-outline-light btn-sm my-1" id="yt" value="yt" onclick="onClickTimeStamp(this)">Year</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="qt" value="qt"  onclick="onClickTimeStamp(this)">Quarter</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="mt" value="mt"  onclick="onClickTimeStamp(this)">Month</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="wt" value="wt"  onclick="onClickTimeStamp(this)">Week</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="at" value="at"  onclick="onClickTimeStamp(this)">Day</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="dt" value="dt"  onclick="onClickTimeStamp(this)">Date</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="ht" value="ht"  onclick="onClickTimeStamp(this)">Hour</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="it" value="it"  onclick="onClickTimeStamp(this)">Minute</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="st" value="st"  onclick="onClickTimeStamp(this)">Second</button>
-          <button class="btn btn-outline-light btn-sm my-1" id="lt" value="lt"  onclick="onClickTimeStamp(this)">MiliSeconds</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="yt" value="yt" onclick="onClickTimeStamp(this)">Year</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="qt" value="qt"  onclick="onClickTimeStamp(this)">Quarter</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="mt" value="mt"  onclick="onClickTimeStamp(this)">Month</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="wt" value="wt"  onclick="onClickTimeStamp(this)">Week</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="at" value="at"  onclick="onClickTimeStamp(this)">Day</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="dt" value="dt"  onclick="onClickTimeStamp(this)">Date</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="ht" value="ht"  onclick="onClickTimeStamp(this)">Hour</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="it" value="it"  onclick="onClickTimeStamp(this)">Minute</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st"  onclick="onClickTimeStamp(this)">Second</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt"  onclick="onClickTimeStamp(this)">MiliSeconds</button>
         </div>
         <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE"></div>
       </div>
