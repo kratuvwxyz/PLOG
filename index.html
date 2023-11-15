@@ -80,27 +80,27 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/scss/main-min.css" />
-    
+
     <style>
       /* height */
       ::-webkit-scrollbar {
         height: 2px;
         width: 5px;
       }
-      
+
       /* Track */
       ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
       }
-       
+
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
       }
-      
+
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #555;
       }
     </style>
 
@@ -124,62 +124,152 @@
     </nav>
     <div class="container-fluid">
       <div class="row p-2 section1 my-2">
-        <div class="p-3 mb-3" style="overflow: auto; white-space: nowrap;">
+        <div class="p-3 mb-3" style="overflow: auto; white-space: nowrap">
           <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="resetTimeDate" value="resetTimeDate" onclick="onResetStamp(this)">Reset</button>
           <!-- yt, qt, mt, wt, dt, ht, it, st, lt -->
           <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="yt" value="yt" onclick="onClickTimeStamp(this)">Year</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="qt" value="qt"  onclick="onClickTimeStamp(this)">Quarter</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="mt" value="mt"  onclick="onClickTimeStamp(this)">Month</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="wt" value="wt"  onclick="onClickTimeStamp(this)">Week</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="at" value="at"  onclick="onClickTimeStamp(this)">Day</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="dt" value="dt"  onclick="onClickTimeStamp(this)">Date</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="ht" value="ht"  onclick="onClickTimeStamp(this)">Hour</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="it" value="it"  onclick="onClickTimeStamp(this)">Minute</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st"  onclick="onClickTimeStamp(this)">Second</button>
-          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt"  onclick="onClickTimeStamp(this)">MiliSeconds</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="qt" value="qt" onclick="onClickTimeStamp(this)">Quarter</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="mt" value="mt" onclick="onClickTimeStamp(this)">Month</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="wt" value="wt" onclick="onClickTimeStamp(this)">Week</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="at" value="at" onclick="onClickTimeStamp(this)">Day</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="dt" value="dt" onclick="onClickTimeStamp(this)">Date</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="ht" value="ht" onclick="onClickTimeStamp(this)">Hour</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="it" value="it" onclick="onClickTimeStamp(this)">Minute</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st" onclick="onClickTimeStamp(this)">Second</button>
+          <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt" onclick="onClickTimeStamp(this)">MiliSeconds</button>
         </div>
         <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE"></div>
       </div>
       <div class="row p-2 pb-5 mb-5">
-        <div class="col">
-          <div class="container-FLUID p-2">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 order-12 order-md-1" style="min-width: 330px">
+        <div class="container-fluid p-2">
+          <div class="row">
+            <div class="bg-dark d-flex flex-wrap">
+              <!-- Password Creator -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
-                  <div id="section7" data-toggle="tooltip" data-placement="bottom" title="Flip The Coin" onclick="flipCoin()"></div>
-                </div>
-                <div class="p-2 w-100">
-                  <div class="btn-group w-100" id="section10" data-toggle="tooltip" data-placement="bottom" title="Green is Win, Red is Dead, Blue is Glue"></div>
-                </div>
-                <div class="p-2 w-100">
-                  <div id="section13" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  <div id="section6" data-toggle="tooltip" data-placement="bottom" title="Password Creator" onclick="oneMinute()"></div>
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-4 order-6 order-md-2" style="min-width: 330px">
+              <!-- Random Word Creator -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
-                  <div id="section6" data-toggle="tooltip" data-placement="bottom" title="Randomly Generate Password" onclick="oneMinute()"></div>
+                  <div id="section9" data-toggle="tooltip" data-placement="bottom" title="Random 4 Words Creator" onclick="oneMinute()"></div>
                 </div>
-                <div class="p-2 w-100">
-                  <div id="section9" data-toggle="tooltip" data-placement="bottom" title="Word Random" onclick="oneMinute()"></div>
-                </div>
+              </div>
+
+              <!-- Lorem Ipsum -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
                   <div id="section8" data-toggle="tooltip" data-placement="bottom" title="Copy Lorem Ipsum Text"></div>
                 </div>
               </div>
-              
-              <div class="col-12 col-md-6 col-lg-4 order-6 order-md-2" style="min-width: 330px">
+
+              <!-- PLOG -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="section14" data-toggle="tooltip" data-placement="bottom" title="Record PLOG" onclick="recordPlog()"></div>
+                </div>
+              </div>
+
+              <!-- QR Code Creator -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
                   <input class="w-100 invisible d-none mb-2 text-center inputQR" id="qrInput" placeholder="Insert a URL or TEXT" />
                   <div id="section11" data-toggle="tooltip" data-placement="bottom" title="Generate QR-CODE" onclick="generateQR()"></div>
                   <div id="showQR" class="invisible d-none w-100 bg-white copyable"></div>
                 </div>
+              </div>
+
+              <!-- Text File Creator -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
-                  <textarea class="w-100 invisible d-none mb-2 inputTxt" id="txtInput" placeholder="Insert a TEXT" rows="4" cols="50" ></textarea>
+                  <textarea class="w-100 invisible d-none mb-2 inputTxt" id="txtInput" placeholder="Insert a TEXT" rows="4" cols="50"></textarea>
                   <div id="section12" data-toggle="tooltip" data-placement="bottom" title="Download Text" onclick="downloadTxt()"></div>
                 </div>
+              </div>
+
+              <!-- Flip The Coin -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                 <div class="p-2 w-100">
-                  <div id="section14" data-toggle="tooltip" data-placement="bottom" title="Record PLOG" onclick="recordPlog()"></div>
+                  <div id="section7" data-toggle="tooltip" data-placement="bottom" title="Flip The Coin" onclick="flipCoin()"></div>
+                </div>
+              </div>
+
+              <!-- Roll A Dice -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="rollADice" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Rock Paper Scissor -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div class="btn-group w-100" id="section10" data-toggle="tooltip" data-placement="bottom" title="Green is Win, Red is Dead, Blue is Glue"></div>
+                </div>
+              </div>
+
+              <!-- Memory Game -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="section13" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Meditate -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="meditate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Metronome -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="metronome" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Weather -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="weather" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Color Picker -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="colorPicker" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Calculator -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="calculator" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Tic Tac Toe -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="tic_tac_toe" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Bingo -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="bingo" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                </div>
+              </div>
+
+              <!-- Alphabate -->
+              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                <div class="p-2 w-100">
+                  <div id="alphabate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
                 </div>
               </div>
             </div>

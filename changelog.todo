@@ -9,7 +9,9 @@ Changed:
     ✔ RPS -- change layout when click @done (11/12/2022, 9:36:48 AM)
     ✔ TimeLog -- Update main time log with adding sub categories @done (11/12/2022, 9:03:14 PM)
     ✔ RPS -- when person loose, scratch the word @done (11/12/2022, 9:04:24 PM)
-    
+    ✔ TimeLog -- faster and clean code @done (11/13/2023, 9:32:14 AM)
+    ✔ Layout changed @done (11/14/2023, 8:20:17 PM)
+    ☐ Lorum Ipsum -- make two part, one with lorem original text, second randomly choose
     
 Removed:
     ✔ Remove all time log buttons @done (11/12/2022, 9:03:16 PM)
@@ -38,6 +40,12 @@ Requested:
         ☐ month, date functionality
         ☐ add year and months in display
         ☐ when year and month are the same as current year, then don't show
+    ☐ TimeLog -- options for 
+        ☐ year - 4 digit or 2 digit
+        ☐ week - starting week
+        ☐ day - start from Sunday or Monday
+        ☐ hour - 12 or 24
+
 
 ✔ Changelog last update @done (11/12/2022, 9:39:48 PM)
     - Commit and Tag (Major.Minor.Patch)

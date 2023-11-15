@@ -1,0 +1,68 @@
+{
+  "created_at": "2022-11-03T06:55:26.166Z",
+  "id": 7488265,
+  "name": "GOALS",
+  "notes": null,
+  "status": 1,
+  "token": "zPKktznv",
+  "updated_at": "2023-11-09T02:43:16.984Z",
+  "labels": [
+    { "id": 8526788, "name": "Follow-up", "color": "FFD426" },
+    { "id": 8761053, "name": "Goal", "color": "98aab3" },
+    { "id": 8526782, "name": "High", "color": "4070FF" },
+    { "id": 8526781, "name": "Important", "color": "FFAA00" },
+    { "id": 8526783, "name": "Low", "color": "3DCC3D" },
+    { "id": 8526780, "name": "Urgent", "color": "D01F2E" }
+  ],
+  "sections": [
+    {
+      "sequence": 45000.0,
+      "status": 1,
+      "id": 29305629,
+      "name": "Done",
+      "description": null,
+      "tasks": [
+        {
+          "id": 146266206,
+          "name": "Learn Language",
+          "due": null,
+          "created_at": "2022-11-16T02:45:12.838Z",
+          "notes": null,
+          "status": 8,
+          "attachments": [],
+          "comments": [],
+          "custom_fields": [],
+          "meta_information": null,
+          "sequence": 360000.0,
+          "target_relationships": [],
+          "task_labels": [],
+          "task_personal_tags": [],
+          "token": "kMCV980m",
+          "updated_at": "2023-05-26T00:47:09.774Z",
+          "work_intervals": [],
+          "checklists": [
+            {
+              "id": 77383270,
+              "name": "Checklist",
+              "checklist_items": [
+                { "id": 220797904, "name": "React", "sequence": 0.0, "status": 1, "updated_at": "2022-11-16T02:45:20.370Z", "created_at": "2022-11-16T02:45:20.370Z" },
+                { "id": 220797906, "name": "Angular", "sequence": 15000.0, "status": 1, "updated_at": "2022-11-16T02:45:27.287Z", "created_at": "2022-11-16T02:45:27.287Z" }
+              ]
+            }
+          ],
+          "sub_tasks": [
+            {
+              "id": 3785326,
+              "created_at": "2023-01-28T14:44:33.863Z",
+              "updated_at": "2023-08-09T02:39:35.436Z",
+              "text": "Message Diana to meet",
+              "due": null,
+              "sequence": 2750620.0,
+              "status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
