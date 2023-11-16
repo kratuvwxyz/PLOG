@@ -511,6 +511,9 @@ const oneMinute = () => {
     drow = createRandomWord();
   } while (drow.length <= 19 || drow.length >= 21);
   timeButton("#section9", drow, "btn btn-warning btn-lg btn-block", true);
+
+  showHidePopUp("#section9", "https://kratuvwxyz.github.io/Random-Words-Generator/", "Random Words Generator", "Explore this page for enhanced engagement and a richer interactive experience.");
+
 };
 
 oneMinute();
