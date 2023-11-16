@@ -57,6 +57,10 @@ body {
     border: 2px solid transparent;
 }
 
+.btn-lg, .btn-group-lg > .btn {
+    padding: .5rem;
+}
+
 .sec10:hover {
     border: inset;
     border: 2px solid darken($cyan, 10%) !important;
