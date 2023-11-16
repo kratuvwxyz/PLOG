@@ -25,38 +25,23 @@
 - PLOG
   - Focus your work and log your task on your time pace
 
-### Version
 
-  - 1.2.2
-
-### Standards
-
-- HTML5, CSS3, JavaScript, SCSS
-
-### Components
-
-- jQuery, Bootstrap, Google Fonts, SVG
-
-### Software
-
-- Visual Studio Code Editor
-- Github for versioning
-
-### CONTRIBUTE
+### Contribution
 
 - A [contributing guideline](https://github.com/kratuvwxyz/CONTRIBUTE) available.
 
-### LICENSE
+### License
 
 - [MIT](https://github.com/kratuvwxyz/LICENSE) © 2023 Kratu Desai, DESAIGN LLC.
 
-## CONTACT
 
-Thank you for your time and consideration. My mantra is simple, _chase perfection to catch excellence_. I hope you enjoy my work. **I'd love to hear from you.** Please email me at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
+### Contact
+
+Thank you for your time and consideration. Our guiding principle is straightforward and clear, *chase perfection to catch excellence*. **We hope you enjoy our work and would appreciate hearing from you via email.** Please email us at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
 
 <hr/>
 
-<img src="https://desaign.app/clients/cli/images/logo/desaign-logo-black.png" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2023. <a href="https://desaign.app" target="_blank" style="text-decoration:none;">DESAIGN STUDIO</a>. All Rights Reserved. &#160;
+<img src="https://desaign.app/clients/cli/images/logo/desaign-logo-black.png" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2023. <a href="https://desaign.app" target="_blank" style="text-decoration:none;">DESAIGN STUDIO</a>. All Rights Reseverd. &#160;
 <a href="https://www.facebook.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/facebook.png" alt="Facebook" width="25" /></a> &#160;
 <a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/twitter.png" alt="Twitter" width="25" /></a> &#160;
 <a href="https://www.linkedin.com/company/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/linkedin.png" alt="Linked In" width="25" /></a> &#160;
