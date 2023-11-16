@@ -17,13 +17,14 @@
  ** make text file
  ** download file
  ** location reload
+ ** popup window at the bottom
  */
 // =======================================================================================================
 // =======================================================================================================
 /* document ready */
 $(document).ready(() => {
-    console.log('%cDESAIGN.STUDIO ', 'font-weight: bold; font-size: 50px;color: white; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)');
-    console.log("%c JS Main is running ", "color: green; background: yellow; font-size: 30px");
+  console.log("%cDESAIGN.STUDIO ", "font-weight: bold; font-size: 50px;color: white; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)");
+  console.log("%c JS Main is running ", "color: green; background: yellow; font-size: 30px");
 });
 
 /* click and copy function */
@@ -173,6 +174,18 @@ const download = (url) => {
 /* location reload */
 const locationReload = () => {
   location.reload();
+};
+
+/* popup window */
+const showHidePopUp = (a, b, c, d) => {
+  $(a).on("click", () => {
+    $("#bottomPopup").slideDown();
+    $("#messagePopUp").html(`<a href=${b} target="_blank">${c}</a><br/><p>${d}</p>`);
+  });
+  // Close the pop-up when the close button is clicked
+  $("#closeButton").on("click", function () {
+    $("#bottomPopup").slideUp();
+  });
 };
 
 // =======================================================================================================
@@ -452,8 +465,8 @@ timeButton("#weather", "Weather", "btn btn-secondary btn-lg btn-fix-width btn-bl
 let stamps = [];
 
 const onResetStamp = (x) => {
-    stamps = ["yt", "mt", "dt", "ht", "it"];
-    localStorage.setItem("stamps", JSON.stringify(stamps));
+  stamps = ["yt", "mt", "dt", "ht", "it"];
+  localStorage.setItem("stamps", JSON.stringify(stamps));
   onClickTimeStamp(x);
 };
 
@@ -488,6 +501,8 @@ const oneMinute = () => {
   // password
   // --
   timeButton("#section6", createPassword(), "btn btn-warning btn-lg btn-block", true);
+
+  showHidePopUp("#section6", "https://kratuvwxyz.github.io/Password-Generator/", "Password Generator", "Explore this page for enhanced engagement and a richer interactive experience.");
 
   // --
   // generate random words
