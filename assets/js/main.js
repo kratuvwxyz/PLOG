@@ -29,14 +29,15 @@ $(document).ready(() => {
 
 /* click and copy function */
 clickCopy = (event) => {
-  console.log($(event).attr("id"));
   let el = $("<textarea></textarea>");
-  let text = $(event).attr("id") === "sec82" ? lorIpsText() : $(event).attr("id") === "sec81" ? $(event).attr("value") : $(event.target.id).text();
+  let text = $(event).attr("id") === "sec82" ? lorIpsText() : $(event).attr("id") === "sec81" ? $(event).attr("value") : $("#" + event.target.id).text();
   $(el).val(text);
   $("#app").append(el);
   $(el).select();
   document.execCommand("copy");
   $(el).remove();
+  // After copy play audio
+  audio.play();
 };
 
 /* camel case string generator function */
@@ -91,9 +92,8 @@ const timeButton = (a, b, c, f, d, e) => {
     .addClass(c)
     .css(d, e)
     .click((event) => {
-      if (f === true) {
+      if (f) {
         clickCopy(event);
-        audio.play();
       }
     });
 };

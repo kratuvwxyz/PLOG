@@ -46,6 +46,8 @@ Requested:
         ☐ week - starting week
         ☐ day - start from Sunday or Monday
         ☐ hour - 12 or 24
+    ☐ Alphabate - connect dictionary with meaning of the word, sentance
+        ☐ create an API for dictionary
 
 
 ✔ Changelog last update @done (11/12/2022, 9:39:48 PM)
