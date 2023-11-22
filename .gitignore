@@ -16,17 +16,17 @@ docker-compose.yml
 changelog.todo
 countdown.html
 qrCodeGenerator.html
-assets/css/bootstrap.css
-assets/js/bootstrap.js
-assets/js/jQuery.js
+# assets/css/bootstrap.css
+# assets/js/bootstrap.js
+# assets/js/jQuery.js
 assets/js/main.js
-assets/js/moment-min.js
+# assets/js/moment-min.js
 assets/js/moment.js
 assets/js/popper.js
 assets/js/qrCode.js
 assets/json/project.json
-assets/music/coin.wav
-assets/scss/main-min.css
+# assets/music/coin.wav
+# assets/scss/main-min.css
 assets/scss/main.css
 assets/scss/main.css.map
 assets/scss/main.scss
