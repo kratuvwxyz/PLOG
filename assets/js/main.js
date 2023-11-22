@@ -357,14 +357,15 @@ const flipCoin = () => {
 // =======================================================================================================
 
 let rps = ["ROCK", "PAPER", "SCISSORS"],
-  rpsResetTimeout;
+  rpsResetTimeout, win = 0, loose = 0, tie = 0;
+  $("#showScore").hide();
 const result = (x, y) => {
-  (x === "ROCK" && y === "PAPER") || (x === "PAPER" && y === "SCISSORS") || (x === "SCISSORS" && y === "ROCK") ? createLayout(x, y, true, false) : createLayout(x, y, false, true);
+  (x === "ROCK" && y === "PAPER") || (x === "PAPER" && y === "SCISSORS") || (x === "SCISSORS" && y === "ROCK") ? (createLayout(x, y, true, false), loose++) : (createLayout(x, y, false, true), win++);
 };
 const match = (x, y) => {
   $(".sec10").removeClass("btn-primary");
   rpsResetTimeout = setTimeout(createLayout, 3000);
-  x != y ? result(x, y) : createLayout(x, y, true, true);
+  x != y ? result(x, y) : (createLayout(x, y, true, true), tie++);
 };
 const startRPS = (x) => {
   $(".sec10").removeClass("btn-info btn-danger btn-success").addClass("btn-primary");
@@ -374,6 +375,8 @@ const startRPS = (x) => {
 const getrpsvalue = (e) => {
   clearTimeout(rpsResetTimeout);
   startRPS(e.value);
+  $("#showScore").show().text(`Wins:${win} Loses:${loose} Ties:${tie}`);
+  showHidePopUp("#section10", "https://kratuvwxyz.github.io/Rock-Paper-Scissors/", "ROCK - PAPER - SCISSORS", "Explore this page for enhanced engagement and a richer interactive experience.");
 };
 const createLayout = (x, y, pw, uw) => {
   $("#section10").empty();
