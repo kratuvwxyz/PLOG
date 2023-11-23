@@ -13,20 +13,20 @@ docker-compose.yml
 # git rm -r --cached .
 
 #Files
-changelog.todo
-countdown.html
-qrCodeGenerator.html
+# changelog.todo
+# countdown.html
+# qrCodeGenerator.html
 # assets/css/bootstrap.css
 # assets/js/bootstrap.js
 # assets/js/jQuery.js
-assets/js/main.js
+# assets/js/main.js
 # assets/js/moment-min.js
-assets/js/moment.js
-assets/js/popper.js
-assets/js/qrCode.js
-assets/json/project.json
+# assets/js/moment.js
+# assets/js/popper.js
+# assets/js/qrCode.js
+# assets/json/project.json
 # assets/music/coin.wav
 # assets/scss/main-min.css
-assets/scss/main.css
-assets/scss/main.css.map
-assets/scss/main.scss
+# assets/scss/main.css
+# assets/scss/main.css.map
+# assets/scss/main.scss
