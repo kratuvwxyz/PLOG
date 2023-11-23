@@ -3,6 +3,7 @@ Added:
     ✔ QR Code Generator added @done (6/28/2022, 10:44:20 AM)
     ✔ TXT File Generator added @done (9/28/2022, 10:44:25 AM)
     ✔ External links to all applicable buttons @done (11/16/2023, 12:25:19 AM)
+    ✔ RPS -- toggle win, loose, tie results @done (11/23/2023, 1:33:14 PM)
 
 
 Changed:
@@ -12,7 +13,7 @@ Changed:
     ✔ RPS -- when person loose, scratch the word @done (11/12/2022, 9:04:24 PM)
     ✔ TimeLog -- faster and clean code @done (11/13/2023, 9:32:14 AM)
     ✔ Layout changed @done (11/14/2023, 8:20:17 PM)
-    ☐ Lorum Ipsum -- make two part, one with lorem original text, second randomly choose
+    ✔ Lorum Ipsum -- make two part, one with lorem original text, second randomly choose @done (11/23/2023, 1:32:13 PM)
     
 Removed:
     ✔ Remove all time log buttons @done (11/12/2022, 9:03:16 PM)
@@ -31,7 +32,6 @@ Released:
 
     
 Requested:
-    ☐ RPS -- toggle win, loose, tie results
     ☐ QRCode -- Fix '#' issue @high
     ☐ Memory -- create a layout and game structure
     ☐ TB -- create architect
