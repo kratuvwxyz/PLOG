@@ -1,2 +1,13 @@
 Google site
 https://developers.google.com/chart/infographics/docs/overview
+
+Git branching
+Issue the following command in your Acme repo. It adds a new remote repository named upstream that points to the Generic repo.
+
+```git remote add upstream https://location/of/generic.git```
+
+You can then merge any changes made to Generic into the current branch in Acme with the following command:
+
+```git pull upstream```
+
+If you just want it to download the changes without automatically merging, use git fetch instead of git pull.
