@@ -11,3 +11,24 @@ docker-compose.yml
 0HN0/
 # find . -type f -name '._*' -delete
 # git rm -r --cached .
+
+#Files not to change for github display
+# assets/css/bootstrap.css
+# assets/js/bootstrap.js
+# assets/js/jQuery.js
+# assets/js/moment-min.js
+# assets/music/coin.wav
+# assets/scss/main-min.css
+
+#Files hide
+# changelog.todo
+# countdown.html
+# qrCodeGenerator.html
+# assets/js/main.js
+# assets/js/moment.js
+# assets/js/popper.js
+# assets/js/qrCode.js
+# assets/json/project.json
+# assets/scss/main.css
+# assets/scss/main.css.map
+# assets/scss/main.scss
