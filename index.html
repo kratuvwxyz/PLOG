@@ -81,63 +81,6 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/scss/main-min.css" />
 
-    <style>
-      /* height */
-      ::-webkit-scrollbar {
-        height: 2px;
-        width: 5px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-
-      fieldset {
-        border: 20px solid #333;
-        padding: 20px;
-        margin-top: 20px;
-        width: 100%;
-      }
-
-      legend {
-        font-weight: bold;
-        padding: 0 10px;
-        width: auto;
-        color: #fff;
-      }
-
-      .content {
-        padding-top: 10px;
-      }
-
-      .supsub {
-        display: inline-block;
-      }
-
-      .supsub sup,
-      .supsub sub {
-        position: relative;
-        display: block;
-        font-size: 0.5em;
-        line-height: 0.5;
-      }
-
-      .supsub sub {
-        top: 0.3em;
-      }
-    </style>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MX8ZTS1SBV"></script>
     <script>
@@ -371,9 +314,11 @@
     </div>
     <!-- Footer -->
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5">
-      <a class="navbar-brand" href="https://desaign.app"
-        >POWERED BY <span class="text-warning">THREE CUBES ORG</span> <span class="supsub"><sup>A SECTOR OF</sup><sub>DESAIGN STUDIO</sub></span></a
-      >
+      <div id="box">
+        <span style="color: lightslategray">POWERED BY </span>THREE CUBES &#160;&#160;
+        <div><p>ORG</p></div>
+        <span class="supsub"><sup>A SECTOR OF</sup><sub><a href="https:desaignstudio.com" target="_blank" rel="noopener noreferrer" class="text-light">DESAIGN STUDIO</a></sub></span>
+      </div>
     </nav>
     <!-- Optional JavaScript -->
     <!--     <script src="assets/js/connect.js"></script> -->
