@@ -81,29 +81,6 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/scss/main-min.css" />
 
-    <style>
-      /* height */
-      ::-webkit-scrollbar {
-        height: 2px;
-        width: 5px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MX8ZTS1SBV"></script>
     <script>
@@ -129,22 +106,24 @@
           <div class="col">
             <div class="container-fluid">
               <div class="row p-2 section1 my-2">
-                <div class="h3 text-light w-100">Copy Time Log</div>
-                <div class="p-3 mb-3" style="overflow: auto; white-space: nowrap">
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="resetTimeDate" value="resetTimeDate" onclick="onResetStamp(this)">Reset</button>
-                  <!-- yt, qt, mt, wt, dt, ht, it, st, lt -->
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="yt" value="yt" onclick="onClickTimeStamp(this)">Year</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="qt" value="qt" onclick="onClickTimeStamp(this)">Quarter</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="mt" value="mt" onclick="onClickTimeStamp(this)">Month</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="wt" value="wt" onclick="onClickTimeStamp(this)">Week</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="at" value="at" onclick="onClickTimeStamp(this)">Day</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="dt" value="dt" onclick="onClickTimeStamp(this)">Date</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="ht" value="ht" onclick="onClickTimeStamp(this)">Hour</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="it" value="it" onclick="onClickTimeStamp(this)">Minute</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st" onclick="onClickTimeStamp(this)">Second</button>
-                  <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt" onclick="onClickTimeStamp(this)">MiliSeconds</button>
-                </div>
-                <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE"></div>
+                <fieldset>
+                  <legend>Copy Time Log</legend>
+                  <div class="p-3 mb-3 content" style="overflow: auto; white-space: nowrap">
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="resetTimeDate" value="resetTimeDate" onclick="onResetStamp(this)">Reset</button>
+                    <!-- yt, qt, mt, wt, dt, ht, it, st, lt -->
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="yt" value="yt" onclick="onClickTimeStamp(this)">Year</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="qt" value="qt" onclick="onClickTimeStamp(this)">Quarter</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="mt" value="mt" onclick="onClickTimeStamp(this)">Month</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="wt" value="wt" onclick="onClickTimeStamp(this)">Week</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="at" value="at" onclick="onClickTimeStamp(this)">Day</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="dt" value="dt" onclick="onClickTimeStamp(this)">Date</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="ht" value="ht" onclick="onClickTimeStamp(this)">Hour</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="it" value="it" onclick="onClickTimeStamp(this)">Minute</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st" onclick="onClickTimeStamp(this)">Second</button>
+                    <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt" onclick="onClickTimeStamp(this)">MiliSeconds</button>
+                  </div>
+                  <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE"></div>
+                </fieldset>
               </div>
             </div>
           </div>
@@ -157,30 +136,32 @@
         <div class="row">
           <div class="col">
             <div class="container-fluid">
-              <div class="row">
-                <div class="h3 text-light w-100">Copy and Paste</div>
-                <div class="bg-dark d-flex flex-wrap w-100">
-                  <!-- Password Creator -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="section6" data-toggle="tooltip" data-placement="bottom" title="Password Creator" onclick="oneMinute()"></div>
+              <div class="row p-2 my-2">
+                <fieldset>
+                  <legend>Copy And Paste</legend>
+                  <div class="bg-dark d-flex flex-wrap w-100">
+                    <!-- Password Creator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="section6" data-toggle="tooltip" data-placement="bottom" title="Password Creator" onclick="oneMinute()"></div>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- Random Word Creator -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="section9" data-toggle="tooltip" data-placement="bottom" title="Random 4 Words Creator" onclick="oneMinute()"></div>
+                    <!-- Random Word Creator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="section9" data-toggle="tooltip" data-placement="bottom" title="Random 4 Words Creator" onclick="oneMinute()"></div>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- Lorem Ipsum -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div class="btn-group w-100" id="section8" data-toggle="tooltip" data-placement="bottom" title="Copy Lorem Ipsum or Random Paragraph Text"></div>
+                    <!-- Lorem Ipsum -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div class="btn-group w-100" id="section8" data-toggle="tooltip" data-placement="bottom" title="Copy Lorem Ipsum or Random Paragraph Text"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </fieldset>
               </div>
             </div>
           </div>
@@ -193,72 +174,70 @@
         <div class="row">
           <div class="col">
             <div class="container-fluid">
-              <div class="row">
-                <div class="h3 text-light w-100">Gear-Up</div>
-                <div class="bg-dark d-flex flex-wrap w-100">
-                  <!-- PLOG -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="section14" data-toggle="tooltip" data-placement="bottom" title="Record PLOG" onclick="recordPlog()"></div>
+              <div class="row p-2 my-2">
+                <fieldset>
+                  <legend>Gear Up</legend>
+                  <div class="bg-dark d-flex flex-wrap w-100">
+                    <!-- PLOG -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="section14" data-toggle="tooltip" data-placement="bottom" title="Record PLOG" onclick="recordPlog()"></div>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- QR Code Creator -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <input class="w-100 invisible d-none mb-2 text-center inputQR" id="qrInput" placeholder="Insert a URL or TEXT" />
-                      <div id="section11" data-toggle="tooltip" data-placement="bottom" title="Generate QR-CODE" onclick="generateQR()"></div>
-                      <div id="showQR" class="invisible d-none w-100 bg-white copyable"></div>
+                    <!-- QR Code Creator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <input class="w-100 invisible d-none mb-2 text-center inputQR" id="qrInput" placeholder="Insert a URL or TEXT" />
+                        <div id="section11" data-toggle="tooltip" data-placement="bottom" title="Generate QR-CODE" onclick="generateQR()"></div>
+                        <div id="showQR" class="invisible d-none w-100 bg-white copyable"></div>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- Text File Creator -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <textarea class="w-100 invisible d-none mb-2 inputTxt" id="txtInput" placeholder="Insert a TEXT" rows="4" cols="50"></textarea>
-                      <div id="section12" data-toggle="tooltip" data-placement="bottom" title="Download Text" onclick="downloadTxt()"></div>
+                    <!-- Text File Creator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <textarea class="w-100 invisible d-none mb-2 inputTxt" id="txtInput" placeholder="Insert a TEXT" rows="4" cols="50"></textarea>
+                        <div id="section12" data-toggle="tooltip" data-placement="bottom" title="Download Text" onclick="downloadTxt()"></div>
+                      </div>
                     </div>
-                  </div>
 
-                  <!-- Meditate -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="meditate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                    <!-- Meditate -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="meditate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                      </div>
                     </div>
-                  </div>
-              
-                  <!-- Metronome -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="metronome" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                    </div>
-                  </div>
-              
-                  <!-- Weather -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="weather" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                    </div>
-                  </div>
-              
-                  <!-- Color Picker -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="colorPicker" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                    </div>
-                  </div>
-              
-                  <!-- Calculator -->
-                  <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                    <div class="p-2 w-100">
-                      <div id="calculator" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                    </div>
-                  </div>
 
+                    <!-- Metronome -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="metronome" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                      </div>
+                    </div>
 
+                    <!-- Weather -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="weather" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                      </div>
+                    </div>
 
+                    <!-- Color Picker -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="colorPicker" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                      </div>
+                    </div>
 
-                </div>
+                    <!-- Calculator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="calculator" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
             </div>
           </div>
@@ -269,59 +248,61 @@
     <div class="container-fluid">
       <div class="row p-2 pb-5 mb-5">
         <div class="container-fluid p-2">
-          <div class="row">
-            <div class="bg-dark d-flex flex-wrap">
-              <!-- Flip The Coin -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="section7" data-toggle="tooltip" data-placement="bottom" title="Flip The Coin" onclick="flipCoin()"></div>
+          <div class="row p-2 my-2">
+            <fieldset>
+              <legend>Emerge Victorious</legend>
+              <div class="bg-dark d-flex flex-wrap">
+                <!-- Flip The Coin -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="section7" data-toggle="tooltip" data-placement="bottom" title="Flip The Coin" onclick="flipCoin()"></div>
+                  </div>
+                </div>
+
+                <!-- Roll A Dice -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="rollADice" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  </div>
+                </div>
+
+                <!-- Rock Paper Scissor -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="showScore" class="w-100 text-center bg-dark text-light">Result!</div>
+                    <div class="btn-group w-100" id="section10" data-toggle="tooltip" data-placement="bottom" title="Green you Win, Red you Dead, Blue you Glue"></div>
+                  </div>
+                </div>
+
+                <!-- Memory Game -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="section13" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  </div>
+                </div>
+
+                <!-- Tic Tac Toe -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="tic_tac_toe" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  </div>
+                </div>
+
+                <!-- Bingo -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="bingo" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  </div>
+                </div>
+
+                <!-- Alphabate -->
+                <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                  <div class="p-2 w-100">
+                    <div id="alphabate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
+                  </div>
                 </div>
               </div>
-
-              <!-- Roll A Dice -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="rollADice" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                </div>
-              </div>
-
-              <!-- Rock Paper Scissor -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="showScore" class="w-100 text-center bg-dark text-light">Result!</div>
-                  <div class="btn-group w-100" id="section10" data-toggle="tooltip" data-placement="bottom" title="Green you Win, Red you Dead, Blue you Glue"></div>
-                </div>
-              </div>
-
-              <!-- Memory Game -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="section13" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                </div>
-              </div>
-
-
-              <!-- Tic Tac Toe -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="tic_tac_toe" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                </div>
-              </div>
-
-              <!-- Bingo -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="bingo" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                </div>
-              </div>
-
-              <!-- Alphabate -->
-              <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
-                <div class="p-2 w-100">
-                  <div id="alphabate" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"></div>
-                </div>
-              </div>
-            </div>
+            </fieldset>
           </div>
         </div>
       </div>
@@ -332,9 +313,13 @@
       <p><span id="messagePopUp">&nbsp;</span></p>
     </div>
     <!-- Footer -->
-    <!-- <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5">
-      <a class="navbar-brand" href="https://desaign.app">POWERED BY <span class="text-warning">DESAIGN.STUDIO</span></a>
-    </nav> -->
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5">
+      <div id="box">
+        <span style="color: lightslategray">POWERED BY </span>THREE CUBES &#160;&#160;
+        <div><p>ORG</p></div>
+        <span class="supsub"><sup>A SECTOR OF</sup><sub><a href="https:desaignstudio.com" target="_blank" rel="noopener noreferrer" class="text-light">DESAIGN STUDIO</a></sub></span>
+      </div>
+    </nav>
     <!-- Optional JavaScript -->
     <!--     <script src="assets/js/connect.js"></script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
