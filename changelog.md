@@ -12,5 +12,6 @@
 ### Changed
 
 - GitHub page updated
+- gitignore file updated
 
 
