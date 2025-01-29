@@ -12,5 +12,10 @@
 ### Changed
 
 - GitHub page updated
+- gitignore file updated
 
+
+### Removed
+
+- humans.txt, manifest files, popper.js, moment.js, project.json files
 
