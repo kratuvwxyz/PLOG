@@ -1,2 +1,16 @@
-### 2023-11-21
-- Fixed issue that causing user to stop copy the text
+# Changelog
+
+## [3.0.0] - 2025-01-29
+
+### Added
+
+- Initial setup for new launch
+- Backup
+- Changelog
+
+
+### Changed
+
+- GitHub page updated
+
+
