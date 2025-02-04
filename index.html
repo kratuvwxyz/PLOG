@@ -130,7 +130,7 @@
                     <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="st" value="st" onclick="onClickTimeStamp(this)">Second</button>
                     <button class="btn btn-outline-light btn-sm my-1 plt disabled" id="lt" value="lt" onclick="onClickTimeStamp(this)">MiliSeconds</button>
                   </div>
-                  <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE"></div>
+                  <div id="section1" data-toggle="tooltip" data-placement="bottom" title="CLICK TO COPY THE CODE" onclick="copyTimeLog(this)"></div>
                 </fieldset>
               </div>
             </div>
@@ -165,7 +165,7 @@
                     <!-- Lorem Ipsum -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
-                        <div class="btn-group w-100" id="section8" data-toggle="tooltip" data-placement="bottom" title="Copy Lorem Ipsum or Random Paragraph Text"></div>
+                        <div id="section8" data-toggle="tooltip" data-placement="bottom" title="Copy Lorem Ipsum Text" onclick="copyLoremIpsum(3)"></div>
                       </div>
                     </div>
                   </div>
@@ -335,15 +335,16 @@
       </div>
     </nav>
     <!-- JavaScript -->
-    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/jQuery-min.js"></script>
     <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
     <script src="assets/js/qrCode.js"></script>
     <script src="assets/js/moment-min.js"></script>
     <script src="assets/js/PLOG/common-min.js"></script>
     <script src="assets/js/PLOG/TIMELOG/timelog-min.js"></script>
     <script src="assets/js/PLOG/COPYPASTE/passwordgen-min.js"></script>
     <script src="assets/js/PLOG/COPYPASTE/wordgen-min.js"></script>
+    <script src="assets/js/PLOG/COPYPASTE/lorem-ipsum-min.js"></script>
     <script src="assets/js/main-min.js"></script>
     <!-- Console Signature -->
     <script src="assets/js/signatureOnLoad.js"></script>

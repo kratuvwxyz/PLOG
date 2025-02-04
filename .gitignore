@@ -10,13 +10,15 @@
 changelog.todo
 countdown.html
 qrCodeGenerator.html
+assets/js/jQuery.js
 assets/js/main.js
 assets/js/PLOG/common.js
 assets/js/PLOG/TIMELOG/timelog.js
 assets/js/PLOG/COPYPASTE/passwordgen.js
 assets/js/PLOG/COPYPASTE/wordgen.js
+assets/js/PLOG/COPYPASTE/lorem-ipsum.js
 assets/js/moment.js
-assets/js/popper.js
+# assets/js/popper.js
 # assets/js/qrCode.js
 assets/json/project.json
 assets/scss/main.css
