@@ -14,6 +14,7 @@ assets/js/main.js
 assets/js/PLOG/common.js
 assets/js/PLOG/TIMELOG/timelog.js
 assets/js/PLOG/COPYPASTE/passwordgen.js
+assets/js/PLOG/COPYPASTE/wordgen.js
 assets/js/moment.js
 assets/js/popper.js
 # assets/js/qrCode.js
