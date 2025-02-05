@@ -148,6 +148,7 @@
                 <fieldset>
                   <legend>COPY AND PASTE</legend>
                   <div class="bg-dark d-flex flex-wrap w-100">
+                    <!-- --- -->
                     <!-- Password Creator -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -155,6 +156,7 @@
                       </div>
                     </div>
 
+                    <!-- --- -->
                     <!-- Random Word Creator -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -162,6 +164,7 @@
                       </div>
                     </div>
 
+                    <!-- --- -->
                     <!-- Lorem Ipsum -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -186,13 +189,60 @@
                 <fieldset>
                   <legend>GEAR UP</legend>
                   <div class="bg-dark d-flex flex-wrap w-100">
-                    <!-- PLOG -->
+
+                    <!-- --- -->
+                    <!-- Time Tracker -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
-                        <div id="section14" data-toggle="tooltip" data-placement="bottom" title="Record PLOG" onclick="recordPlog()"></div>
+                        <div id="timeTracker" data-toggle="tooltip" data-placement="bottom" title="Time Tracker"></div>
+                      </div>
+                    </div>
+                    <!-- Time Tracker Modal 1 -->
+                    <div class="modal fade" id="trackerModal" tabindex="-1" aria-labelledby="trackerModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="trackerModalLabel">Start Time Tracker</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body">
+                            <form id="trackerForm">
+                              <div class="mb-3">
+                                <label for="trackerName" class="form-label">What is this tracker for?</label>
+                                <input type="text" class="form-control" id="trackerName" placeholder="Enter tracker name" />
+                              </div>
+                              <div class="mb-3">
+                                <label for="trackerDuration" class="form-label">How long should it run? (in seconds)</label>
+                                <input type="number" class="form-control" id="trackerDuration" placeholder="Enter duration in seconds" />
+                              </div>
+                              <button type="submit" class="btn btn-primary">Start</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Time Tracker Modal 2 -->
+                    <div class="modal fade" id="trackerResultModal" tabindex="-1" aria-labelledby="trackerResultModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="trackerResultModalLabel">Time Tracker</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <div id="showResult"></div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" id="copyResult">Copy Result</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
+                    <!-- --- -->
                     <!-- QR Code Creator -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -345,6 +395,7 @@
     <script src="assets/js/PLOG/COPYPASTE/passwordgen-min.js"></script>
     <script src="assets/js/PLOG/COPYPASTE/wordgen-min.js"></script>
     <script src="assets/js/PLOG/COPYPASTE/lorem-ipsum-min.js"></script>
+    <script src="assets/js/PLOG/GEARUP/time-traker-min.js"></script>
     <script src="assets/js/main-min.js"></script>
     <!-- Console Signature -->
     <script src="assets/js/signatureOnLoad.js"></script>
