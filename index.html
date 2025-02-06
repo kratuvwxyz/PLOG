@@ -289,14 +289,54 @@
                       </div>
                     </div>
 
+                    <!-- --- -->
                     <!-- Text File Creator -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
-                        <textarea class="w-100 invisible d-none mb-2 inputTxt" id="txtInput" placeholder="Insert a TEXT" rows="4" cols="50"></textarea>
-                        <div id="section12" data-toggle="tooltip" data-placement="bottom" title="Download Text" class="downText" onclick="downloadTxt()"></div>
+                        <div id="texfilecreator" data-toggle="tooltip" data-placement="bottom" title="Download File"></div>
+                      </div>
+                    </div>
+                    <!-- Text File Creator Modal 1 -->
+                    <div class="modal fade" id="texfilemodal" tabindex="-1" aria-labelledby="texfilemodalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="texfilemodalLabel">Start Creating File</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body">
+                            <form id="texfileform">
+                              <div class="mb-3">
+                                <label for="fileContent">Text Content</label>
+                                <textarea class="form-control" id="fileContent" rows="5" placeholder="Write your text here..."></textarea>
+                              </div>
+                              <!-- Dropdown for file type selection -->
+                              <div class="form-group">
+                                <label for="fileType">Select File Type</label>
+                                <select class="form-control" id="fileType">
+                                  <option value="txt">TXT</option>
+                                  <option value="csv">CSV</option>
+                                  <option value="md">MD (Markdown)</option>
+                                  <option value="html">HTML</option>
+                                  <option value="json">JSON</option>
+                                  <option value="xml">XML</option>
+                                  <option value="yaml">YAML</option>
+                                  <option value="ini">INI</option>
+                                  <option value="log">LOG</option>
+                                  <option value="rtf">RTF</option>
+                                </select>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" id="saveFile">Download Your File</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
+                    <!-- --- -->
                     <!-- Meditate -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -435,6 +475,7 @@
     <script src="assets/js/PLOG/COPYPASTE/lorem-ipsum-min.js"></script>
     <script src="assets/js/PLOG/GEARUP/time-traker-min.js"></script>
     <script src="assets/js/PLOG/GEARUP/qr-code-gene-min.js"></script>
+    <script src="assets/js/PLOG/GEARUP/file-creator-min.js"></script>
     <script src="assets/js/main-min.js"></script>
     <!-- Console Signature -->
     <script src="assets/js/signatureOnLoad.js"></script>
