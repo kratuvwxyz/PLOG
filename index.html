@@ -189,7 +189,6 @@
                 <fieldset>
                   <legend>GEAR UP</legend>
                   <div class="bg-dark d-flex flex-wrap w-100">
-
                     <!-- --- -->
                     <!-- Time Tracker -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
@@ -246,9 +245,47 @@
                     <!-- QR Code Creator -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
-                        <input class="w-100 invisible d-none mb-2 text-center inputQR" id="qrInput" placeholder="Insert a URL or TEXT" />
-                        <div id="section11" data-toggle="tooltip" data-placement="bottom" title="Generate QR-CODE" onclick="generateQR()"></div>
-                        <div id="showQR" class="invisible d-none w-100 bg-white copyable"></div>
+                        <div id="qrcodecreator" data-toggle="tooltip" data-placement="bottom" title="Time Tracker"></div>
+                      </div>
+                    </div>
+                    <!-- QR Code Creator Modal 1 -->
+                    <div class="modal fade" id="qrcodemodal" tabindex="-1" aria-labelledby="qrcodemodalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="qrcodemodalLabel">Start Creating QR Code</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body">
+                            <form id="qrcodeform">
+                              <div class="mb-3">
+                                <label for="qrcodeName" class="form-label">Generate Your QR Code</label>
+                                <input type="text" class="form-control" id="qrcodeName" placeholder="Insert a URL or Text" />
+                              </div>
+                              <button type="submit" class="btn btn-primary">Generate</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- QR Code Creator Modal 2 -->
+                    <div class="modal fade" id="qrcoderesultmodal" tabindex="-1" aria-labelledby="qrcoderesultmodalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="qrcoderesultmodalLabel">QR Code</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body">
+                            <h6 id="qrcodecopy"></h6>
+                            <br />
+                            <div id="qrcoderesult"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success" id="copyQRCode">Copy QR-Code</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -389,6 +426,7 @@
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap-min.js"></script>
     <script src="assets/js/qrCode.js"></script>
+    <!-- <script src="assets/js/qrCodeStyling.js"></script> -->
     <script src="assets/js/moment-min.js"></script>
     <script src="assets/js/PLOG/common-min.js"></script>
     <script src="assets/js/PLOG/TIMELOG/timelog-min.js"></script>
@@ -396,6 +434,7 @@
     <script src="assets/js/PLOG/COPYPASTE/wordgen-min.js"></script>
     <script src="assets/js/PLOG/COPYPASTE/lorem-ipsum-min.js"></script>
     <script src="assets/js/PLOG/GEARUP/time-traker-min.js"></script>
+    <script src="assets/js/PLOG/GEARUP/qr-code-gene-min.js"></script>
     <script src="assets/js/main-min.js"></script>
     <!-- Console Signature -->
     <script src="assets/js/signatureOnLoad.js"></script>
