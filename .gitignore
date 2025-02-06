@@ -19,6 +19,7 @@ assets/js/PLOG/COPYPASTE/wordgen.js
 assets/js/PLOG/COPYPASTE/lorem-ipsum.js
 assets/js/PLOG/GEARUP/time-traker.js
 assets/js/PLOG/GEARUP/qr-code-gene.js
+assets/js/PLOG/GEARUP/file-creator.js
 assets/js/moment.js
 # assets/js/popper.js
 assets/js/qrCodeStyling.js
