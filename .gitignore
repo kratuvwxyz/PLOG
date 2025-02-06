@@ -21,7 +21,7 @@ assets/js/PLOG/GEARUP/time-traker.js
 assets/js/PLOG/GEARUP/qr-code-gene.js
 assets/js/moment.js
 # assets/js/popper.js
-# assets/js/qrCode.js
+assets/js/qrCodeStyling.js
 assets/json/project.json
 assets/scss/main.css
 assets/scss/main.css.map

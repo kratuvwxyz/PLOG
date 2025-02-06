@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code Styling Example</title>
+    <style>
+      /* Optional: style your container */
+      #qr-code {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container where the QR code will be rendered -->
+    <div id="qr-code"></div>
+
+    <!-- Include the qrcode-styling library from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+
+    <!-- Your custom script -->
+    <script>
+      // Create a new instance of QRCodeStyling
+      const qrCode = new QRCodeStyling({
+        width: 300,
+        height: 300,
+        data: "https://desaign.studio",
+        // Optional: add your logo image inside the QR code
+        image: "black.png", // Replace with your logo URL
+        dotsOptions: {
+          color: "#000000",
+          type: "rounded",
+        },
+        backgroundOptions: {
+          color: "#ffffff",
+        },
+        imageOptions: {
+          crossOrigin: "anonymous",
+          margin: 20,
+        },
+      });
+
+      // Append the QR code to a DOM element
+      qrCode.append(document.getElementById("qr-code"));
+    </script>
+  </body>
+</html>
