@@ -1,0 +1,1 @@
+timeButton("#devChangelog","Developer Changelog","btn btn-primary btn-lg btn-fix-width btn-block"),openURLNewTab("#devChangelog","https://marketplace.visualstudio.com/items?itemName=desaigner.change-plog");
