@@ -21,6 +21,7 @@ assets/js/PLOG/GEARUP/time-traker.js
 assets/js/PLOG/GEARUP/qr-code-gene.js
 assets/js/PLOG/GEARUP/file-creator.js
 assets/js/PLOG/GEARUP/transfer-links.js
+assets/js/PLOG/GEARUP/file-name-generator.js
 assets/js/moment.js
 # assets/js/popper.js
 assets/js/qrCodeStyling.js
