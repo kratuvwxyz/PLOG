@@ -337,6 +337,70 @@
                     </div>
 
                     <!-- --- -->
+                    <!-- File Name Creator -->
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
+                      <div class="p-2 w-100">
+                        <div id="file-name-generator-id" data-toggle="tooltip" data-placement="bottom" title="Copy File Name"></div>
+                      </div>
+                    </div>
+                    <!-- File Name Creator Modal 1 -->
+                    <div class="modal fade" id="file-name-generator-modal" tabindex="-1" aria-labelledby="file-name-generator-modalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="file-name-generator-modalLabel">File Name Generator</h5>
+                            <button type="button" class="btn-fn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                          </div>
+                          <div class="modal-body" style="width: 490px;">
+                            <div class="row section1 m-1 p-3 bg-light align-items-center" id="mainSection" style="width: 100%; height: 100%">
+                              <p style="width: 100%"><input type="text" style="width: 100%; font-weight: bolder" maxlength="200" id="maxlenghtInput" class="bg-info" oninput="Generator.runInputValue(this.value)" placeholder="Write your file name" /></p>
+                              <small>TEXT LENGTH LIMIT &nbsp;<span class="navbar-brand mb-0 h1" id="maxlengthValue">200</span></small>
+                              <br /><br />
+                              <select id="emojiSelect" onchange="Generator.addEmojiToInput()">
+                                <option value="" disabled selected>Add an Emoji to file name</option>
+                              </select>
+                              <br /><br />
+                              <fieldset style="border: 1px dotted black; padding: 15px">
+                                <legend style="float: none; width: auto; margin-bottom: 0; color: darkgray;">Add Date</legend>
+                                <p><input type="checkbox" name="timeStamp" id="timeStamp" oninput="Generator.runTimestamp()" /> Add current time log (Year-Month-Date-Hour-Minute)</p>
+                                <p>Add month, date and year <input type="date" name="dateOnly" id="dateOnly" oninput="Generator.runCurrentDate()" /></p>
+                                <p>Add week and year <input type="week" name="monthYear" id="monthYear" oninput="Generator.runWeekYear()" /></p>
+                                <p><input type="checkbox" name="beforeTime" id="beforeTime" oninput="Generator.beforeTime()" /> Add time before name</p>
+                              </fieldset>
+                              <fieldset style="border: 1px dotted black; padding: 15px">
+                                <legend style="float: none; width: auto; margin-bottom: 0; color: darkgray;">Join the Spaces</legend>
+                                <div class="form-check pb-3">
+                                  <input class="form-check-input" type="radio" name="dashType" id="under" checked value="_" onchange="Generator.changeDashType('_')" />
+                                  <label class="form-check-label" for="under"> Under Dash (_) </label>
+                                </div>
+                                <div class="form-check pb-3">
+                                  <input class="form-check-input" type="radio" name="dashType" id="middle" value="-" onchange="Generator.changeDashType('-')" />
+                                  <label class="form-check-label" for="middle"> Middle Dash (&ndash;) </label>
+                                </div>
+                                <div class="form-check pb-3">
+                                  <input class="form-check-input" type="radio" name="dashType" id="camleCase" value="cC" onchange="Generator.changeDashType('cC')" />
+                                  <label class="form-check-label" for="camleCase"> Text Into Camle Case </label>
+                                </div>
+                                <div class="form-check pb-3">
+                                  <input class="form-check-input" type="radio" name="dashType" id="keepItAs" value="&#160;" onchange="Generator.changeDashType(' ')" />
+                                  <label class="form-check-label" for="keepItAs"> Keep It With Spaces </label>
+                                </div>
+                              </fieldset>
+                              <br /><br />
+                              <fieldset style="border: 1px dotted black; padding: 15px">
+                                <legend style="float: none; width: auto; margin-bottom: 0; color: darkgray;">Result</legend>
+                                <small id="showValueText" style="overflow-wrap: break-word"></small><br /><br />
+                                <button class="btn btn-danger" id="readyButton" onclick="Generator.clickCopy()">Copy</button>
+                              </fieldset>
+                              <button class="mt-5" onclick="Generator.reset()">Reset</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- --- -->
                     <!-- Meditate -->
                     <div class="col-12 col-md-6 col-lg-4" style="min-width: 330px">
                       <div class="p-2 w-100">
@@ -485,6 +549,7 @@
     <script src="assets/js/PLOG/GEARUP/qr-code-gene-min.js"></script>
     <script src="assets/js/PLOG/GEARUP/file-creator-min.js"></script>
     <script src="assets/js/PLOG/GEARUP/transfer-links-min.js"></script>
+    <script src="assets/js/PLOG/GEARUP/file-name-generator-min.js"></script>
     <script src="assets/js/main-min.js"></script>
     <!-- Console Signature -->
     <script src="assets/js/signatureOnLoad.js"></script>
